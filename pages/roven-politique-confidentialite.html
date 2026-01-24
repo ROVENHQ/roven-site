@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <base target="_self" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Politique de Confidentialité - ROVEN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/logo/favicon.ico" />
+    <meta
+      name="description"
+      content="Politique de confidentialité de rovenhq.com - Protection des données personnelles et conformité RGPD"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --roven-blue: #2563eb;
+        --roven-black: #0b0f19;
+        --roven-white: #ffffff;
+        --roven-gray: #94a3b8;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--roven-white);
+        color: var(--roven-black);
+        line-height: 1.6;
+      }
+
+      .placeholder {
+        background-color: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-style: italic;
+        color: #6b7280;
+      }
+
+      .highlight-box {
+        background-color: #f0f9ff;
+        border-left: 4px solid var(--roven-blue);
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 0 8px 8px 0;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="../index.html#accueil" class="flex items-center gap-1.5">
+            <img
+              src="../assets/logo/favicon.ico"
+              alt="ROVEN"
+              class="h-9 w-auto translate-y-[4px]"
+            />
+            <span class="text-xl font-bold tracking-tight text-gray-900 leading-none"> ROVEN </span>
+          </a>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="../index.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Accueil</a
+            >
+            <a
+              href="roven-mentions-legales.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Mentions légales</a
+            >
+            <a href="roven-politique-confidentialite.html" class="text-blue-600 font-semibold"
+              >Confidentialité</a
+            >
+            <a
+              href="roven-conditions-generales-vente.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >CGV</a
+            >
+            <a
+              href="../index.html#contact"
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-gray-900" id="mobile-menu-button">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4 space-y-4" id="mobile-menu">
+          <a href="../index.html" class="block text-gray-900 hover:text-blue-600">Accueil</a>
+          <a href="roven-mentions-legales.html" class="block text-gray-900 hover:text-blue-600"
+            >Mentions légales</a
+          >
+          <a
+            href="../index.html#contact"
+            class="block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 w-fit"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-12 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <!-- Header -->
+        <div class="mb-12 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            Politique de Confidentialité
+          </h1>
+          <p class="text-gray-600 text-lg">
+            Protection de vos données personnelles et conformité RGPD
+          </p>
+          <div class="mt-4 text-sm text-gray-500">
+            Dernière mise à jour : <span id="current-date"></span>
+          </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="mb-10">
+          <div class="highlight-box">
+            <p class="font-semibold text-blue-700 mb-2">À propos de cette politique</p>
+            <p class="text-gray-700">
+              Cette politique de confidentialité explique comment ROVEN collecte, utilise et protège
+              vos données personnelles lorsque vous utilisez notre site web rovenhq.com. Nous
+              accordons une grande importance à la protection de votre vie privée et nous nous
+              engageons à respecter le Règlement Général sur la Protection des Données (RGPD).
+            </p>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+          <!-- Responsable du traitement -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              1. Responsable du traitement
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>Les données personnelles collectées sur le site rovenhq.com sont traitées par :</p>
+              <div class="bg-gray-50 p-6 rounded-lg mt-4">
+                <p>
+                  <strong>Nom / Raison sociale :</strong>
+                  <span class="placeholder">ROVEN</span>
+                </p>
+                <p>
+                  <strong>Adresse :</strong> <span class="placeholder">Martinique, France</span>
+                </p>
+                <p><strong>Email :</strong> contact@rovenhq.com</p>
+                <p><strong>Téléphone :</strong> <span class="placeholder">Non communiqué</span></p>
+              </div>
+              <p>
+                En cas de question concernant le traitement de vos données personnelles, vous pouvez
+                nous contacter à l'adresse email mentionnée ci-dessus.
+              </p>
+            </div>
+          </section>
+
+          <!-- Données collectées -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              2. Données collectées
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Nous collectons uniquement les données nécessaires pour répondre à vos demandes via
+                notre formulaire de contact :
+              </p>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                  Données collectées via le formulaire de contact :
+                </h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li><strong>Nom et prénom</strong> (obligatoire)</li>
+                  <li><strong>Nom de l'entreprise</strong> (facultatif)</li>
+                  <li><strong>Adresse email</strong> (obligatoire)</li>
+                  <li><strong>Numéro de téléphone</strong> (facultatif)</li>
+                  <li><strong>Type de projet</strong> (obligatoire)</li>
+                  <li><strong>Budget indicatif</strong> (facultatif)</li>
+                  <li><strong>Message</strong> (obligatoire)</li>
+                  <li><strong>Consentement au traitement des données</strong> (obligatoire)</li>
+                </ul>
+              </div>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                  Données techniques collectées automatiquement :
+                </h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li><strong>Adresse IP</strong> (pour des raisons de sécurité)</li>
+                  <li><strong>Date et heure de la demande</strong></li>
+                  <li>
+                    <strong>Informations sur le navigateur et le système d'exploitation</strong>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="highlight-box mt-6">
+                <p class="font-semibold text-blue-700 mb-2">Important :</p>
+                <p class="text-gray-700">
+                  Nous ne collectons pas de données sensibles (origine raciale, opinions politiques,
+                  croyances religieuses, santé, orientation sexuelle, etc.). Nous n'utilisons pas de
+                  cookies publicitaires ni de systèmes de tracking avancé.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Finalités -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              3. Finalités du traitement
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>Vos données personnelles sont collectées pour les finalités suivantes :</p>
+              <ul class="list-disc pl-6 space-y-3 mt-3">
+                <li>
+                  <strong>Répondre à vos demandes de contact</strong> : traiter et répondre à vos
+                  questions, demandes de devis ou demandes d'information
+                </li>
+                <li>
+                  <strong>Communication commerciale</strong> : vous envoyer des informations sur nos
+                  services (uniquement si vous y avez consenti explicitement)
+                </li>
+                <li>
+                  <strong>Amélioration de nos services</strong> : analyser les demandes pour
+                  améliorer notre site et nos services
+                </li>
+                <li>
+                  <strong>Sécurité</strong> : prévenir et détecter les fraudes ou activités
+                  malveillantes
+                </li>
+              </ul>
+              <p class="mt-4">
+                Nous ne traitons vos données que pour les finalités spécifiques pour lesquelles
+                elles ont été collectées.
+              </p>
+            </div>
+          </section>
+
+          <!-- Base légale -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              4. Base légale du traitement
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Le traitement de vos données personnelles est fondé sur les bases légales suivantes
+                :
+              </p>
+              <ul class="list-disc pl-6 space-y-3 mt-3">
+                <li>
+                  <strong>Votre consentement</strong> : lorsque vous soumettez le formulaire de
+                  contact, vous consentez explicitement au traitement de vos données pour répondre à
+                  votre demande
+                </li>
+                <li>
+                  <strong>L'intérêt légitime</strong> : pour assurer la sécurité de notre site et
+                  prévenir les fraudes
+                </li>
+                <li>
+                  <strong>L'exécution de mesures précontractuelles</strong> : pour préparer une
+                  proposition commerciale suite à votre demande de devis
+                </li>
+              </ul>
+              <div class="highlight-box mt-6">
+                <p class="font-semibold text-blue-700 mb-2">Votre consentement :</p>
+                <p class="text-gray-700">
+                  Vous pouvez retirer votre consentement à tout moment en nous contactant à
+                  l'adresse email mentionnée dans la section "Vos droits". Le retrait de votre
+                  consentement n'affectera pas la licéité du traitement effectué avant ce retrait.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Destinataires -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              5. Destinataires des données
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>Vos données personnelles sont accessibles aux destinataires suivants :</p>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">En interne :</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>L'équipe ROVEN (personnes autorisées à traiter les demandes commerciales)</li>
+                </ul>
+              </div>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">Sous-traitants :</h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>
+                    <strong>Formspree</strong> : service de gestion de formulaires en ligne qui
+                    traite les données du formulaire de contact
+                  </li>
+                  <li><strong>Vercel</strong> : hébergeur du site rovenhq.com</li>
+                  <li>
+                    <strong>Fournisseurs de services techniques</strong> : pour la maintenance et
+                    l'hébergement du site
+                  </li>
+                </ul>
+              </div>
+
+              <div class="highlight-box mt-6">
+                <p class="font-semibold text-blue-700 mb-2">Engagement de nos sous-traitants :</p>
+                <p class="text-gray-700">
+                  Tous nos sous-traitants sont sélectionnés avec soin et s'engagent à respecter les
+                  exigences du RGPD. Ils ne traitent vos données que pour les finalités pour
+                  lesquelles nous les leur transmettons.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Durée de conservation -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              6. Durée de conservation
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Vos données personnelles sont conservées pendant la durée nécessaire à la
+                réalisation des finalités pour lesquelles elles ont été collectées :
+              </p>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                  Durées de conservation spécifiques :
+                </h3>
+                <ul class="list-disc pl-6 space-y-3">
+                  <li>
+                    <strong>Données du formulaire de contact</strong> : 3 ans à compter du dernier
+                    contact
+                  </li>
+                  <li><strong>Données techniques (logs)</strong> : 1 an maximum</li>
+                  <li>
+                    <strong>Données pour les prospects</strong> : 3 ans à compter du dernier contact
+                  </li>
+                  <li>
+                    <strong>Données pour les clients</strong> : durée de la relation contractuelle +
+                    5 ans à des fins de preuve
+                  </li>
+                </ul>
+              </div>
+
+              <p class="mt-4">
+                À l'expiration de ces délais, vos données sont soit supprimées, soit anonymisées
+                pour des analyses statistiques.
+              </p>
+            </div>
+          </section>
+
+          <!-- Sécurité -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              7. Sécurité des données
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour
+                protéger vos données personnelles contre :
+              </p>
+              <ul class="list-disc pl-6 space-y-3 mt-3">
+                <li>L'accès non autorisé</li>
+                <li>La modification ou la divulgation non autorisée</li>
+                <li>La destruction ou la perte accidentelle</li>
+              </ul>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                  Mesures de sécurité mises en place :
+                </h3>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li>Utilisation de connexions sécurisées (HTTPS/SSL)</li>
+                  <li>Accès restreint aux données (principe du besoin de connaître)</li>
+                  <li>Formation de notre équipe à la protection des données</li>
+                  <li>Procédures de sauvegarde régulières</li>
+                </ul>
+              </div>
+
+              <p class="mt-4">
+                Malgré nos efforts, aucune méthode de transmission sur Internet ou de stockage
+                électronique n'est totalement sécurisée. En cas de violation de données, nous nous
+                engageons à vous en informer dans les délais prévus par le RGPD.
+              </p>
+            </div>
+          </section>
+
+          <!-- Vos droits -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              8. Vos droits RGPD
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Conformément au Règlement Général sur la Protection des Données (RGPD), vous
+                disposez des droits suivants :
+              </p>
+
+              <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droit d'accès</h3>
+                  <p>
+                    Vous pouvez obtenir la confirmation que vos données sont traitées et en recevoir
+                    une copie.
+                  </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droit de rectification</h3>
+                  <p>Vous pouvez demander la correction de données inexactes ou incomplètes.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droit à l'effacement</h3>
+                  <p>
+                    Vous pouvez demander la suppression de vos données ("droit à l'oubli") dans
+                    certains cas.
+                  </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droit d'opposition</h3>
+                  <p>
+                    Vous pouvez vous opposer au traitement de vos données pour des raisons
+                    légitimes.
+                  </p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droit à la limitation</h3>
+                  <p>Vous pouvez demander la limitation du traitement dans certains cas.</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droit à la portabilité</h3>
+                  <p>
+                    Vous pouvez recevoir vos données dans un format structuré et les transmettre à
+                    un autre responsable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="highlight-box mt-6">
+                <p class="font-semibold text-blue-700 mb-2">Comment exercer vos droits :</p>
+                <p class="text-gray-700 mb-3">
+                  Pour exercer vos droits ou pour toute question concernant le traitement de vos
+                  données, vous pouvez nous contacter :
+                </p>
+                <ul class="list-disc pl-6 space-y-2">
+                  <li><strong>Par email</strong> : contact@rovenhq.com</li>
+                  <li>
+                    <strong>Par courrier</strong> :
+                    <span class="placeholder">Martinique, France</span>
+                  </li>
+                </ul>
+                <p class="text-gray-700 mt-3">
+                  Nous nous engageons à répondre à votre demande dans un délai d'un mois. Si
+                  nécessaire, ce délai peut être prolongé de deux mois compte tenu de la complexité
+                  de la demande.
+                </p>
+              </div>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                  Droit d'introduire une réclamation :
+                </h3>
+                <p>
+                  Si vous estimez que vos droits ne sont pas respectés, vous avez le droit
+                  d'introduire une réclamation auprès de la Commission Nationale de l'Informatique
+                  et des Libertés (CNIL) :
+                </p>
+                <div class="bg-gray-50 p-4 rounded-lg mt-3">
+                  <p>
+                    <strong>CNIL</strong> - 3 Place de Fontenoy, TSA 80715, 75334 Paris Cedex 07
+                  </p>
+                  <p>
+                    Site web :
+                    <a
+                      href="https://www.cnil.fr"
+                      target="_blank"
+                      class="text-blue-600 hover:text-blue-800 hover:underline"
+                      >https://www.cnil.fr</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Transferts hors UE -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              9. Transferts hors Union Européenne
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Certains de nos sous-traitants peuvent traiter vos données en dehors de l'Union
+                Européenne :
+              </p>
+
+              <div class="mt-6">
+                <h3 class="text-lg font-semibold mb-3 text-gray-800">Formspree :</h3>
+                <p>
+                  Formspree, notre prestataire pour la gestion des formulaires, peut traiter vos
+                  données via ses infrastructures situées aux États-Unis.
+                </p>
+                <p class="mt-3">
+                  Formspree s'engage à respecter les standards de protection des données équivalents
+                  à ceux de l'Union Européenne, notamment via :
+                </p>
+                <ul class="list-disc pl-6 space-y-2 mt-2">
+                  <li>Des clauses contractuelles types de la Commission européenne</li>
+                  <li>La certification Privacy Shield (si applicable)</li>
+                  <li>D'autres garanties appropriées</li>
+                </ul>
+              </div>
+
+              <div class="highlight-box mt-6">
+                <p class="font-semibold text-blue-700 mb-2">Vérification par l'utilisateur :</p>
+                <p class="text-gray-700">
+                  Nous vous invitons à consulter la politique de confidentialité de Formspree pour
+                  plus d'informations sur leurs pratiques de protection des données :
+                </p>
+                <p class="mt-2">
+                  <a
+                    href="https://formspree.io/legal/privacy-policy"
+                    target="_blank"
+                    class="text-blue-600 hover:text-blue-800 hover:underline"
+                    >https://formspree.io/legal/privacy-policy</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Mise à jour -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              10. Mise à jour de la politique
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Cette politique de confidentialité peut être mise à jour périodiquement pour
+                refléter :
+              </p>
+              <ul class="list-disc pl-6 space-y-3 mt-3">
+                <li>Les changements dans nos pratiques de traitement des données</li>
+                <li>Les évolutions légales ou réglementaires</li>
+                <li>Les modifications de nos services</li>
+              </ul>
+
+              <p class="mt-4">
+                Nous vous informerons des changements significatifs en publiant la nouvelle
+                politique sur notre site web. La date de la dernière mise à jour est indiquée en
+                haut de cette page.
+              </p>
+
+              <div class="highlight-box mt-6">
+                <p class="font-semibold text-blue-700 mb-2">Votre responsabilité :</p>
+                <p class="text-gray-700">
+                  Nous vous encourageons à consulter régulièrement cette politique de
+                  confidentialité pour rester informé de la manière dont nous protégeons vos
+                  données.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact final -->
+          <section class="mt-12 pt-8 border-t border-gray-200">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900">Contact</h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Pour toute question concernant cette politique de confidentialité ou le traitement
+                de vos données personnelles, vous pouvez nous contacter :
+              </p>
+
+              <div class="bg-gray-50 p-6 rounded-lg mt-4">
+                <p class="font-semibold mb-2">Par email :</p>
+                <a
+                  href="mailto:contact@roven.fr"
+                  class="text-blue-600 hover:text-blue-800 hover:underline"
+                  >contact@rovenhq.com</a
+                >
+
+                <p class="font-semibold mb-2 mt-4">Par courrier :</p>
+                <p><span class="placeholder">Martinique, France</span></p>
+              </div>
+
+              <p class="text-sm text-gray-600 mt-4">
+                Nous nous engageons à répondre à votre demande dans les meilleurs délais.
+              </p>
+            </div>
+          </section>
+        </div>
+
+        <!-- Back to home -->
+        <div class="mt-12 text-center">
+          <a
+            href="../index.html"
+            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            Retour à l'accueil
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-2xl font-bold mb-4">ROVEN</h3>
+            <p class="text-gray-400">
+              Studio freelance spécialisé en création de sites vitrines professionnels.
+            </p>
+          </div>
+          <div class="flex space-x-6 mb-8 md:mb-0">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+          </div>
+          <div>
+            <p class="text-gray-400 text-sm text-center md:text-right">
+              © 2024 ROVEN. Tous droits réservés.
+            </p>
+            <p class="text-gray-400 text-sm text-center md:text-right mt-2">
+              <a
+                href="roven-mentions-legales.html"
+                class="hover:text-white transition-colors duration-300"
+                >Mentions légales</a
+              >
+              |
+              <a
+                href="roven-politique-confidentialite.html"
+                class="hover:text-white transition-colors duration-300"
+                >Confidentialité</a
+              >
+              |
+              <a
+                href="roven-conditions-generales-vente.html"
+                class="hover:text-white transition-colors duration-300"
+                >CGV</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-500 text-sm">
+            SIRET : <span class="placeholder">À compléter</span> • TVA :
+            <span class="placeholder">À compléter</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Set current date
+      const now = new Date();
+      const options = { day: 'numeric', month: 'long', year: 'numeric' };
+      document.getElementById('current-date').textContent = now.toLocaleDateString(
+        'fr-FR',
+        options,
+      );
+
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

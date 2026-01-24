@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <base target="_self" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions Générales de Vente - ROVEN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/logo/favicon.ico" />
+    <meta
+      name="description"
+      content="Conditions Générales de Vente de ROVEN - Prestations de création de sites vitrines professionnels"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --roven-blue: #2563eb;
+        --roven-black: #0b0f19;
+        --roven-white: #ffffff;
+        --roven-gray: #94a3b8;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--roven-white);
+        color: var(--roven-black);
+        line-height: 1.6;
+      }
+
+      .placeholder {
+        background-color: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-style: italic;
+        color: #6b7280;
+      }
+
+      .highlight-box {
+        background-color: #f0f9ff;
+        border-left: 4px solid var(--roven-blue);
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .legal-section {
+        margin-bottom: 3rem;
+      }
+
+      .legal-section h2 {
+        counter-increment: section-counter;
+        position: relative;
+        padding-left: 3rem;
+      }
+
+      .legal-section h2::before {
+        content: counter(section-counter) '.';
+        position: absolute;
+        left: 0;
+        color: var(--roven-blue);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="../index.html#accueil" class="flex items-center gap-1.5">
+            <img
+              src="../assets/logo/favicon.ico"
+              alt="ROVEN"
+              class="h-9 w-auto translate-y-[4px]"
+            />
+            <span class="text-xl font-bold tracking-tight text-gray-900 leading-none"> ROVEN </span>
+          </a>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="../index.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Accueil</a
+            >
+            <a
+              href="roven-mentions-legales.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Mentions légales</a
+            >
+            <a
+              href="roven-politique-confidentialite.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Confidentialité</a
+            >
+            <a href="roven-conditions-generales-vente.html" class="text-blue-600 font-semibold"
+              >CGV</a
+            >
+            <a
+              href="../index.html#contact"
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-gray-900" id="mobile-menu-button">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4 space-y-4" id="mobile-menu">
+          <a href="index.html" class="block text-gray-900 hover:text-blue-600">Accueil</a>
+          <a href="mentions-legales.html" class="block text-gray-900 hover:text-blue-600"
+            >Mentions légales</a
+          >
+          <a href="politique-confidentialite.html" class="block text-gray-900 hover:text-blue-600"
+            >Confidentialité</a
+          >
+          <a href="cgv.html" class="block text-blue-600 font-semibold">CGV</a>
+          <a
+            href="index.html#contact"
+            class="block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 w-fit"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-12 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <!-- Header -->
+        <div class="mb-12 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            Conditions Générales de Vente
+          </h1>
+          <p class="text-gray-600 text-lg">
+            Prestations de création de sites vitrines professionnels
+          </p>
+          <div class="mt-4 text-sm text-gray-500">
+            Dernière mise à jour : <span id="current-date"></span>
+          </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="mb-10">
+          <div class="highlight-box">
+            <p class="font-semibold text-blue-700 mb-2">À propos de ces conditions</p>
+            <p class="text-gray-700">
+              Les présentes Conditions Générales de Vente (CGV) régissent les relations
+              contractuelles entre ROVEN et ses clients pour la prestation de services de création
+              de sites vitrines professionnels. En validant un devis, le client accepte sans réserve
+              les présentes conditions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+          <div class="counter-reset">
+            <!-- Article 1 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Objet
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Les présentes Conditions Générales de Vente ont pour objet de définir les droits
+                  et obligations des parties dans le cadre de la vente de prestations de services de
+                  création de sites vitrines professionnels proposées par ROVEN.
+                </p>
+                <p>
+                  Elles s'appliquent à toute commande passée par un client professionnel (TPE,
+                  indépendant, entreprise) pour la création, la refonte ou la maintenance d'un site
+                  vitrine.
+                </p>
+              </div>
+            </section>
+
+            <!-- Article 2 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Identification du prestataire
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  <strong>ROVEN</strong> est un studio freelance spécialisé dans la création de
+                  sites vitrines professionnels.
+                </p>
+
+                <div class="bg-gray-50 p-6 rounded-lg mt-4">
+                  <p><strong>Nom commercial :</strong> ROVEN</p>
+                  <p>
+                    <strong>Statut :</strong> Entrepreneur individuel (activité en cours de
+                    création)
+                  </p>
+                  <p>
+                    <strong>Numéro SIRET :</strong>
+                    <span class="placeholder">En cours d'immatriculation</span>
+                  </p>
+                  <p>
+                    <strong>TVA intracommunautaire :</strong>
+                    <span class="placeholder">Non applicable (article 293B du CGI)</span>
+                  </p>
+                  <p><strong>Email :</strong> contact@rovenhq.com</p>
+                  <p><strong>Site web :</strong> rovenhq.com</p>
+                </div>
+
+                <div class="highlight-box mt-4">
+                  <p class="font-semibold text-blue-700 mb-2">Information importante :</p>
+                  <p class="text-gray-700">
+                    L'immatriculation au Registre du Commerce et des Sociétés (RCS) et l'obtention
+                    du numéro SIRET sont en cours. Ces informations seront mises à jour sur le site
+                    dès leur obtention.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 3 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Champ d'application
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>Les présentes Conditions Générales de Vente s'appliquent :</p>
+                <ul class="list-disc pl-6 space-y-3 mt-3">
+                  <li>À toutes les prestations de services proposées par ROVEN</li>
+                  <li>Exclusivement aux clients professionnels (TPE, indépendants, entreprises)</li>
+                  <li>Sur le territoire français</li>
+                  <li>
+                    Pour les prestations de création, refonte ou maintenance de sites vitrines
+                  </li>
+                </ul>
+
+                <p class="mt-4">
+                  Elles prévalent sur toute autre condition générale d'achat du client. Toute
+                  dérogation aux présentes conditions ne sera valable que si elle fait l'objet d'un
+                  accord écrit préalable entre les parties.
+                </p>
+                <p class="mt-4">
+                  Les présentes CGV ne s’appliquent pas aux consommateurs au sens du Code de la
+                  consommation.
+                </p>
+              </div>
+            </section>
+
+            <!-- Article 4 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Commande et validation du devis
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>La commande s'effectue selon le processus suivant :</p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Étape 1 : Demande de devis
+                  </h3>
+                  <p>
+                    Le client formule sa demande via le formulaire de contact disponible sur
+                    rovenhq.com ou par email à contact@rovenhq.com.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Étape 2 : Établissement du devis
+                  </h3>
+                  <p>ROVEN établit un devis détaillé précisant :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>La description détaillée des prestations</li>
+                    <li>Les délais de réalisation</li>
+                    <li>Le prix total HT et TTC</li>
+                    <li>Les modalités de paiement</li>
+                    <li>Les éventuels frais supplémentaires</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Étape 3 : Validation</h3>
+                  <p>La commande est considérée comme ferme et définitive après :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>La validation écrite du devis par le client (par email)</li>
+                    <li>Le versement de l'acompte selon les conditions prévues au devis</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Validité du devis :</p>
+                  <p class="text-gray-700">
+                    Le devis est valable 30 jours à compter de sa date d'émission. Passé ce délai,
+                    ROVEN se réserve le droit de modifier les prix et conditions.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 5 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Tarifs
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Les tarifs sont exprimés en euros hors taxes (HT). TVA non applicable, article
+                  293B du Code général des impôts, sauf évolution du régime fiscal du prestataire.
+                </p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Composition des prix :</h3>
+                  <p>Les prix comprennent :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>La conception et le développement du site vitrine</li>
+                    <li>Les éventuelles réunions de suivi (dans la limite précisée au devis)</li>
+                    <li>Les corrections mineures pendant la phase de validation</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Frais non inclus :</h3>
+                  <p>Ne sont pas inclus dans les prix :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>L'achat du nom de domaine (entre 10€ et 20€/an)</li>
+                    <li>L'hébergement web (à partir de 5€/mois)</li>
+                    <li>Les images et contenus payants</li>
+                    <li>Les modifications substantielles après validation</li>
+                    <li>Les prestations supplémentaires non prévues au devis</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Révision des prix :</p>
+                  <p class="text-gray-700">
+                    ROVEN se réserve le droit de modifier ses tarifs à tout moment. Les tarifs
+                    applicables sont ceux en vigueur au moment de la validation du devis.
+                  </p>
+                  <p class="text-gray-700 mt-2">
+                    Les tarifs sont exprimés en euros et sont ceux figurant sur le devis accepté par
+                    le client.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 6 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Modalités de paiement
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Les modalités de paiement sont précisées dans chaque devis. Le paiement s'effectue
+                  selon les conditions suivantes :
+                </p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Acompte :</h3>
+                  <p>
+                    Un acompte de 50 % du montant total TTC est exigé avant le début des travaux.
+                    Cet acompte n'est pas remboursable en cas d'annulation par le client après le
+                    début des prestations.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Solde :</h3>
+                  <p>
+                    Le solde est payable à la livraison du site vitrine et avant sa mise en ligne
+                    définitive.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Moyens de paiement acceptés :
+                  </h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>Paiement en ligne sécurisé par carte bancaire via Stripe (CB)</li>
+                    <li>
+                      (Optionnel) Virement bancaire (sur demande, pour clients professionnels)
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Délais de paiement :</h3>
+                  <p>
+                    Les factures sont payables à réception. Tout retard de paiement entraîne de
+                    plein droit l'application d'intérêts de retard au taux légal en vigueur, ainsi
+                    qu'une indemnité forfaitaire pour frais de recouvrement de 40€.
+                  </p>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Suspension des prestations :</p>
+                  <p class="text-gray-700">
+                    En cas de non-paiement à l'échéance, ROVEN se réserve le droit de suspendre les
+                    prestations en cours jusqu'à régularisation complète du paiement.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 7 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Délais de réalisation
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Les délais de réalisation sont indiqués à titre indicatif dans le devis. Ils
+                  commencent à courir à compter de :
+                </p>
+                <ul class="list-disc pl-6 space-y-3 mt-3">
+                  <li>La validation écrite du devis par le client</li>
+                  <li>La réception de l'acompte</li>
+                  <li>
+                    La fourniture de tous les éléments nécessaires par le client (contenus, images,
+                    etc.)
+                  </li>
+                </ul>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Prolongation des délais :
+                  </h3>
+                  <p>Les délais peuvent être prolongés en cas de :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>Retard dans la fourniture des éléments par le client</li>
+                    <li>Demandes de modifications substantielles après validation</li>
+                    <li>Événements indépendants de la volonté de ROVEN (force majeure)</li>
+                    <li>Périodes de congés</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Engagement de moyens :</p>
+                  <p class="text-gray-700">
+                    ROVEN s'engage à mettre en œuvre tous les moyens nécessaires pour respecter les
+                    délais annoncés, mais ne peut garantir des délais fermes en raison de la nature
+                    créative des prestations et de la dépendance aux retours clients.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 8 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Obligations du client
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>Le client s'engage à :</p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Fourniture des éléments :
+                  </h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>
+                      Fournir tous les éléments nécessaires à la réalisation du site (textes,
+                      images, logos, etc.) dans les délais convenus
+                    </li>
+                    <li>
+                      S'assurer de la légalité des contenus fournis et de leur conformité au droit
+                      d'auteur
+                    </li>
+                    <li>Fournir des éléments de qualité et exploitables</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Collaboration :</h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>Participer activement aux réunions de suivi prévues</li>
+                    <li>Fournir des retours clairs et précis dans les délais impartis</li>
+                    <li>Valider les différentes étapes dans les délais convenus</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Paiement :</h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>Régler les factures dans les délais prévus</li>
+                    <li>Informer ROVEN de tout changement pouvant affecter le paiement</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Conséquences du non-respect :</p>
+                  <p class="text-gray-700">
+                    En cas de manquement du client à ses obligations, notamment en matière de délais
+                    de fourniture ou de validation, ROVEN se réserve le droit de suspendre les
+                    prestations et de facturer les travaux déjà réalisés.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 9 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Obligations du prestataire
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>ROVEN s'engage à :</p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Prestation de services :</h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>Réaliser les prestations conformément au devis validé</li>
+                    <li>Respecter les délais annoncés dans la mesure du possible</li>
+                    <li>
+                      Mettre en œuvre ses compétences professionnelles avec diligence et conscience
+                    </li>
+                    <li>Informer le client de l'avancement des travaux</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Conseil et accompagnement :
+                  </h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>
+                      Conseiller le client sur les solutions techniques adaptées à ses besoins
+                    </li>
+                    <li>
+                      Former le client à l'utilisation de son site si cette prestation est incluse
+                    </li>
+                    <li>Assurer un support technique pendant la période de garantie</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Confidentialité :</h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>
+                      Traiter avec confidentialité toutes les informations communiquées par le
+                      client
+                    </li>
+                    <li>Ne pas divulguer d'informations confidentielles à des tiers</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Engagement de moyens :</p>
+                  <p class="text-gray-700">
+                    ROVEN s'engage à mettre en œuvre tous les moyens nécessaires pour réaliser les
+                    prestations conformément aux règles de l'art, mais n'est tenu qu'à une
+                    obligation de moyens, et non de résultat.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 10 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Propriété intellectuelle
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>Les droits de propriété intellectuelle sont régis comme suit :</p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Éléments fournis par le client :
+                  </h3>
+                  <p>
+                    Le client garantit qu'il dispose des droits nécessaires sur les éléments fournis
+                    (textes, images, logos, etc.) et s'engage à indemniser ROVEN en cas de
+                    réclamation de tiers.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Créations de ROVEN :</h3>
+                  <p>ROVEN conserve la propriété intellectuelle sur :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>Son savoir-faire et ses méthodes de travail</li>
+                    <li>Les codes sources génériques et librairies réutilisables</li>
+                    <li>Les éléments graphiques créés spécifiquement pour le projet</li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Cession des droits :</h3>
+                  <p>
+                    La cession des droits de propriété intellectuelle sur le site vitrine créé
+                    intervient :
+                  </p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>Après paiement intégral du solde</li>
+                    <li>
+                      Pour une cession exclusive des droits d’exploitation, pour le monde entier,
+                      pour la durée légale des droits d’auteur, sur le site livré
+                    </li>
+                    <li>Limitée au site vitrine créé</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Droit de citation :</p>
+                  <p class="text-gray-700">
+                    ROVEN se réserve le droit de mentionner le projet réalisé dans son portfolio et
+                    ses supports de communication, sauf demande contraire expresse du client.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 11 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Responsabilité
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>La responsabilité de ROVEN est limitée comme suit :</p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Garantie :</h3>
+                  <p>
+                    ROVEN garantit la conformité de ses prestations aux spécifications du devis
+                    pendant une période de 30 jours après la mise en ligne du site.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Limitation de responsabilité :
+                  </h3>
+                  <p>
+                    La responsabilité de ROVEN ne pourra en aucun cas excéder le montant total HT de
+                    la prestation facturée.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Exclusions :</h3>
+                  <p>ROVEN ne pourra être tenu responsable :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      Des dommages indirects (perte de chiffre d'affaires, perte de données, etc.)
+                    </li>
+                    <li>
+                      Des problèmes liés à l'hébergement ou au nom de domaine choisis par le client
+                    </li>
+                    <li>De l'utilisation frauduleuse ou inappropriée du site par des tiers</li>
+                    <li>
+                      Des modifications apportées au site par le client ou un tiers après la
+                      livraison
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Assurance professionnelle :</p>
+                  <p class="text-gray-700">
+                    ROVEN pourra souscrire une assurance responsabilité civile professionnelle
+                    couvrant son activité.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 12 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Résiliation / annulation
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>Les conditions de résiliation sont les suivantes :</p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Annulation par le client :
+                  </h3>
+                  <p>En cas d'annulation par le client :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>
+                      Avant le début des travaux : des frais administratifs peuvent être retenus
+                    </li>
+                    <li>
+                      Après le début des travaux : l'acompte est conservé par ROVEN pour couvrir les
+                      travaux déjà réalisés
+                    </li>
+                    <li>
+                      En cours de réalisation : les travaux déjà réalisés sont facturés au prorata
+                      temporis
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Résiliation par ROVEN :</h3>
+                  <p>ROVEN se réserve le droit de résilier le contrat en cas de :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>Non-paiement des factures</li>
+                    <li>Manquement répété du client à ses obligations</li>
+                    <li>Force majeure rendant impossible l'exécution du contrat</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Modalités de résiliation :</p>
+                  <p class="text-gray-700">
+                    Toute résiliation doit être notifiée par écrit (email) et prend effet 15 jours
+                    après la notification, sauf en cas de manquement grave.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 13 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Droit de rétractation
+              </h2>
+              <p>
+                Conformément aux articles L221-18 et suivants du Code de la consommation, le client
+                particulier dispose d’un délai de quatorze (14) jours à compter de la validation du
+                devis pour exercer son droit de rétractation.<br />
+                Toutefois, conformément à l’article L221-28 du Code de la consommation, le droit de
+                rétractation ne peut être exercé lorsque l’exécution de la prestation a commencé,
+                avec l’accord exprès du client, avant la fin du délai de rétractation.<br />
+                En validant le devis et en demandant explicitement le démarrage immédiat de la
+                prestation (par écrit ou par voie électronique), le client particulier reconnaît
+                renoncer expressément à son droit de rétractation.
+              </p>
+            </section>
+
+            <!-- Article 14 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Force majeure
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Les parties ne pourront être tenues pour responsables en cas d'inexécution de
+                  leurs obligations résultant d'un événement de force majeure.
+                </p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Définition :</h3>
+                  <p>
+                    Sont considérés comme cas de force majeure tous faits ou circonstances
+                    irrésistibles, extérieurs aux parties, imprévisibles, inévitables et
+                    indépendants de la volonté des parties.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Exemples :</h3>
+                  <ul class="list-disc pl-6 space-y-2">
+                    <li>Grèves</li>
+                    <li>Pandémies</li>
+                    <li>Catastrophes naturelles</li>
+                    <li>Pannes de réseaux de télécommunication</li>
+                    <li>Interruption d'électricité prolongée</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Notification :</p>
+                  <p class="text-gray-700">
+                    La partie affectée par un cas de force majeure doit en informer l'autre partie
+                    dans les plus brefs délais. Les obligations des parties sont suspendues pendant
+                    la durée de la force majeure.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 15 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Données personnelles
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  ROVEN s'engage à protéger les données personnelles de ses clients conformément au
+                  Règlement Général sur la Protection des Données (RGPD).
+                </p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Traitement des données :</h3>
+                  <p>Les données personnelles collectées sont traitées pour :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>La gestion de la relation commerciale</li>
+                    <li>La facturation et la comptabilité</li>
+                    <li>La communication sur les services</li>
+                  </ul>
+                  <p class="mt-4">Aucune donnée bancaire n’est collectée.</p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Droits des clients :</h3>
+                  <p>Conformément au RGPD, les clients disposent des droits suivants :</p>
+                  <ul class="list-disc pl-6 space-y-2 mt-2">
+                    <li>Droit d'accès à leurs données</li>
+                    <li>Droit de rectification</li>
+                    <li>Droit à l'effacement</li>
+                    <li>Droit à la limitation du traitement</li>
+                    <li>Droit d'opposition</li>
+                    <li>Droit à la portabilité</li>
+                  </ul>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Politique de confidentialité :</p>
+                  <p class="text-gray-700">
+                    Pour plus d'informations sur le traitement de vos données personnelles,
+                    consultez notre
+                    <a
+                      href="roven-politique-confidentialite.html"
+                      class="text-blue-600 hover:text-blue-800 hover:underline"
+                      >Politique de Confidentialité</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 16 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Droit applicable et juridiction compétente
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Les présentes Conditions Générales de Vente sont régies par le droit français.
+                </p>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Litiges :</h3>
+                  <p>
+                    En cas de litige, les parties s'engagent à rechercher une solution amiable avant
+                    toute action judiciaire.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">
+                    Compétence territoriale :
+                  </h3>
+                  <p>
+                    En l'absence de résolution amiable, les tribunaux compétents sont ceux du lieu
+                    du siège social de ROVEN.
+                  </p>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Médiation :</p>
+                  <p class="text-gray-700">
+                    Tout litige relatif à l’interprétation ou l’exécution des présentes CGV sera
+                    soumis à la compétence exclusive des tribunaux du ressort du siège du
+                    prestataire, après tentative de résolution amiable.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article 17 -->
+            <section class="legal-section">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+                Dispositions diverses
+              </h2>
+              <div class="space-y-4 text-gray-700">
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Entièreté du contrat :</h3>
+                  <p>
+                    Les présentes Conditions Générales de Vente, ainsi que le devis validé,
+                    constituent l'intégralité des obligations des parties. Toute condition contraire
+                    posée par le client serait inopposable à ROVEN.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Modification des CGV :</h3>
+                  <p>
+                    ROVEN se réserve le droit de modifier les présentes Conditions Générales de
+                    Vente à tout moment. Les conditions applicables sont celles en vigueur au moment
+                    de la validation du devis.
+                  </p>
+                </div>
+
+                <div class="mt-6">
+                  <h3 class="text-lg font-semibold mb-3 text-gray-800">Non-renonciation :</h3>
+                  <p>
+                    Le fait pour l'une des parties de ne pas se prévaloir d'un manquement de l'autre
+                    partie à l'une des obligations visées aux présentes ne saurait être interprété
+                    pour l'avenir comme une renonciation à l'obligation en cause.
+                  </p>
+                </div>
+
+                <div class="highlight-box mt-6">
+                  <p class="font-semibold text-blue-700 mb-2">Acceptation :</p>
+                  <p class="text-gray-700">
+                    La validation écrite du devis par le client vaut acceptation sans réserve des
+                    présentes Conditions Générales de Vente.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Contact final -->
+            <section class="mt-12 pt-8 border-t border-gray-200">
+              <h2 class="text-2xl font-bold mb-6 text-gray-900">Contact</h2>
+              <div class="space-y-4 text-gray-700">
+                <p>
+                  Pour toute question concernant ces Conditions Générales de Vente, vous pouvez nous
+                  contacter :
+                </p>
+
+                <div class="bg-gray-50 p-6 rounded-lg mt-4">
+                  <p class="font-semibold mb-2">Par email :</p>
+                  <a
+                    href="mailto:contact@rovenhq.com"
+                    class="text-blue-600 hover:text-blue-800 hover:underline"
+                    >contact@rovenhq.com</a
+                  >
+
+                  <p class="font-semibold mb-2 mt-4">Site web :</p>
+                  <a
+                    href="https://rovenhq.com"
+                    target="_blank"
+                    class="text-blue-600 hover:text-blue-800 hover:underline"
+                    >rovenhq.com</a
+                  >
+                </div>
+
+                <p class="text-sm text-gray-600 mt-4">
+                  Ces Conditions Générales de Vente sont disponibles en permanence sur notre site
+                  web à l'adresse : https://rovenhq.com/cgv
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Back to home -->
+        <div class="mt-12 text-center">
+          <a
+            href="../index.html"
+            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            Retour à l'accueil
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-2xl font-bold mb-4">ROVEN</h3>
+            <p class="text-gray-400">
+              Studio freelance spécialisé en création de sites vitrines professionnels.
+            </p>
+          </div>
+          <div class="flex space-x-6 mb-8 md:mb-0">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+          </div>
+          <div>
+            <p class="text-gray-400 text-sm text-center md:text-right">
+              © 2024 ROVEN. Tous droits réservés.
+            </p>
+            <p class="text-gray-400 text-sm text-center md:text-right mt-2">
+              <a
+                href="roven-mentions-legales.html"
+                class="hover:text-white transition-colors duration-300"
+                >Mentions légales</a
+              >
+              |
+              <a
+                href="roven-politique-confidentialite.html"
+                class="hover:text-white transition-colors duration-300"
+                >Confidentialité</a
+              >
+              |
+              <a href="roven-conditions-generales-vente.html" class="text-blue-400 font-semibold"
+                >CGV</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-500 text-sm">
+            SIRET : <span class="placeholder">En cours d'immatriculation</span> • TVA :
+            <span class="placeholder">En cours d'immatriculation</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Set current date
+      const now = new Date();
+      const options = { day: 'numeric', month: 'long', year: 'numeric' };
+      document.getElementById('current-date').textContent = now.toLocaleDateString(
+        'fr-FR',
+        options,
+      );
+
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+
+      // Initialize counter for legal sections
+      document.querySelector('.counter-reset').style.counterReset = 'section-counter';
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

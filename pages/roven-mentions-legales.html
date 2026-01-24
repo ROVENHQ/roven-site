@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <base target="_self" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentions Légales - ROVEN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/logo/favicon.ico" />
+    <meta
+      name="description"
+      content="Mentions légales du site rovenhq.com - Studio freelance spécialisé dans la création de sites vitrines professionnels"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --roven-blue: #2563eb;
+        --roven-black: #0b0f19;
+        --roven-white: #ffffff;
+        --roven-gray: #94a3b8;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--roven-white);
+        color: var(--roven-black);
+        line-height: 1.6;
+      }
+
+      .placeholder {
+        background-color: #f3f4f6;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-style: italic;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <header class="bg-white shadow-sm">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="../index.html#accueil" class="flex items-center gap-1.5">
+            <img
+              src="../assets/logo/favicon.ico"
+              alt="ROVEN"
+              class="h-9 w-auto translate-y-[4px]"
+            />
+            <span class="text-xl font-bold tracking-tight text-gray-900 leading-none"> ROVEN </span>
+          </a>
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="../index.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Accueil</a
+            >
+            <a href="roven-mentions-legales.html" class="text-blue-600 font-semibold"
+              >Mentions légales</a
+            >
+            <a
+              href="roven-politique-confidentialite.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Confidentialité</a
+            >
+            <a
+              href="roven-conditions-generales-vente.html"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >CGV</a
+            >
+            <a
+              href="../index.html#contact"
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-gray-900" id="mobile-menu-button">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4 space-y-4" id="mobile-menu">
+          <a href="index.html" class="block text-gray-900 hover:text-blue-600">Accueil</a>
+          <a href="index.html#services" class="block text-gray-900 hover:text-blue-600">Services</a>
+          <a
+            href="index.html#contact"
+            class="block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 w-fit"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-12 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <!-- Header -->
+        <div class="mb-12 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Mentions Légales</h1>
+          <p class="text-gray-600 text-lg">Informations légales concernant le site rovenhq.com</p>
+          <div class="mt-4 text-sm text-gray-500">
+            Dernière mise à jour : <span id="current-date"></span>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+          <!-- Éditeur du site -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Éditeur du site
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p><strong>Nom / Raison sociale :</strong> <span class="placeholder">ROVEN</span></p>
+              <p>
+                <strong>Statut :</strong>
+                <span class="placeholder"
+                  >Statut : Entrepreneur individuel (activité en cours de création)</span
+                >
+              </p>
+              <p><strong>Adresse :</strong> <span class="placeholder">Martinique, France</span></p>
+              <p><strong>Email :</strong> contact@rovenhq.com</p>
+              <p><strong>Téléphone :</strong> <span class="placeholder">Non communiqué</span></p>
+              <p>
+                <strong>SIRET :</strong> <span class="placeholder">En cours d’immatriculation</span>
+              </p>
+              <p>
+                <strong>Numéro de TVA intracommunautaire :</strong>
+                <span class="placeholder">Non applicable</span>
+              </p>
+            </div>
+          </section>
+
+          <!-- Responsable de publication -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Responsable de publication
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p><strong>Nom :</strong> <span class="placeholder">Willem Marchety-Concy</span></p>
+              <p><strong>Email :</strong> contact@rovenhq.com</p>
+              <p>
+                Le responsable de publication est la personne physique ou morale qui dirige la
+                rédaction du site internet.
+              </p>
+            </div>
+          </section>
+
+          <!-- Hébergement -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Hébergement
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>Ce site est hébergé par :</p>
+              <div class="bg-gray-50 p-6 rounded-lg">
+                <p class="font-semibold">Vercel Inc.</p>
+                <p>340 S Lemon Ave #4133</p>
+                <p>Walnut, CA 91789</p>
+                <p>États-Unis</p>
+                <p class="mt-4">
+                  Site web :
+                  <a
+                    href="https://vercel.com"
+                    target="_blank"
+                    class="text-blue-600 hover:text-blue-800 hover:underline"
+                    >https://vercel.com</a
+                  >
+                </p>
+              </div>
+              <p class="text-sm text-gray-600 mt-4">
+                Le site rovenhq.com est déployé et hébergé via la plateforme Vercel, spécialisée
+                dans l'hébergement d'applications web modernes.
+              </p>
+            </div>
+          </section>
+
+          <!-- Propriété intellectuelle -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Propriété intellectuelle
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                L'ensemble de ce site relève de la législation française et internationale sur le
+                droit d'auteur et la propriété intellectuelle.
+              </p>
+              <p>
+                Tous les droits de reproduction sont réservés, y compris pour les documents
+                téléchargeables et les représentations iconographiques et photographiques.
+              </p>
+              <p>
+                La marque "ROVEN", le logo et tous les éléments graphiques du site sont la propriété
+                exclusive de ROVEN.
+              </p>
+              <p>
+                Toute reproduction, représentation, modification, publication, adaptation de tout ou
+                partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est
+                interdite, sauf autorisation écrite préalable de ROVEN.
+              </p>
+              <p>
+                Toute exploitation non autorisée du site ou de l'un quelconque des éléments qu'il
+                contient sera considérée comme constitutive d'une contrefaçon et poursuivie
+                conformément aux dispositions des articles L.335-2 et suivants du Code de la
+                Propriété Intellectuelle.
+              </p>
+            </div>
+          </section>
+
+          <!-- Limitation de responsabilité -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Limitation de responsabilité
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                ROVEN s'efforce d'assurer au mieux de ses possibilités, l'exactitude et la mise à
+                jour des informations diffusées sur ce site, dont elle se réserve le droit de
+                corriger, à tout moment et sans préavis, le contenu.
+              </p>
+              <p>
+                Toutefois, ROVEN ne peut garantir l'exactitude, la précision ou l'exhaustivité des
+                informations mises à disposition sur ce site.
+              </p>
+              <p>En conséquence, ROVEN décline toute responsabilité :</p>
+              <ul class="list-disc pl-6 space-y-2 mt-2">
+                <li>
+                  pour toute imprécision, inexactitude ou omission portant sur des informations
+                  disponibles sur le site ;
+                </li>
+                <li>
+                  pour tous dommages résultant d'une intrusion frauduleuse d'un tiers ayant entraîné
+                  une modification des informations mises à la disposition sur le site ;
+                </li>
+                <li>
+                  et plus généralement pour tous dommages, directs ou indirects, quelles qu'en
+                  soient les causes, origines, natures ou conséquences, provoqués à raison de
+                  l'accès de quiconque au site ou de l'impossibilité d'y accéder, de même que
+                  l'utilisation du site et/ou du crédit accordé à une quelconque information
+                  provenant directement ou indirectement de ce dernier.
+                </li>
+              </ul>
+              <p>
+                Les informations présentes sur le site sont données à titre indicatif et ne
+                sauraient constituer un engagement contractuel de la part de ROVEN.
+              </p>
+            </div>
+          </section>
+
+          <!-- Liens externes -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Liens externes
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Le site rovenhq.com peut contenir des liens hypertextes pointant vers d'autres sites
+                internet.
+              </p>
+              <p>
+                ROVEN n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à
+                leur contenu, leur accessibilité, leur fonctionnement ou leur politique de
+                confidentialité.
+              </p>
+              <p>
+                La création de liens vers ces sites externes ne constitue en aucun cas une
+                approbation ou une validation de leur contenu.
+              </p>
+              <p>
+                L'accès et l'utilisation de ces sites se font sous la seule responsabilité de
+                l'utilisateur.
+              </p>
+            </div>
+          </section>
+
+          <!-- Données personnelles -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Données personnelles
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Les données personnelles collectées via le formulaire de contact sont traitées par
+                ROVEN dans le seul but de répondre à votre demande.
+              </p>
+              <p>
+                Le formulaire de contact est géré via Formspree, un service tiers spécialisé dans la
+                gestion de formulaires en ligne.
+              </p>
+              <p>
+                Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi
+                "Informatique et Libertés", vous disposez d'un droit d'accès, de rectification, de
+                suppression et de portabilité de vos données personnelles.
+              </p>
+              <p>
+                Pour exercer ces droits ou pour toute question concernant le traitement de vos
+                données, vous pouvez nous contacter à l'adresse email suivante :
+                <strong>contact@rovenhq.com</strong>
+              </p>
+              <p>
+                Pour plus d'informations sur la protection de vos données, consultez notre
+                <a href="#" class="text-blue-600 hover:text-blue-800 hover:underline"
+                  >Politique de Confidentialité</a
+                >.
+              </p>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section class="mb-10">
+            <h2 class="text-2xl font-bold mb-6 text-gray-900 pb-3 border-b border-gray-200">
+              Contact
+            </h2>
+            <div class="space-y-4 text-gray-700">
+              <p>
+                Pour toute question concernant ces mentions légales ou pour toute demande relative à
+                vos droits, vous pouvez nous contacter :
+              </p>
+              <div class="bg-gray-50 p-6 rounded-lg mt-4">
+                <p class="font-semibold mb-2">Par email :</p>
+                <a
+                  href="mailto:contact@roven.fr"
+                  class="text-blue-600 hover:text-blue-800 hover:underline"
+                  >contact@rovenhq.com</a
+                >
+
+                <p class="font-semibold mb-2 mt-4">Par téléphone :</p>
+                <p><span class="placeholder">Non communiqué</span></p>
+
+                <p class="font-semibold mb-2 mt-4">Par courrier :</p>
+                <p><span class="placeholder">Martinique, France</span></p>
+              </div>
+              <p class="text-sm text-gray-600 mt-4">
+                Nous nous engageons à répondre à votre demande dans les meilleurs délais.
+              </p>
+            </div>
+          </section>
+
+          <!-- Note finale -->
+          <div class="mt-12 pt-8 border-t border-gray-200">
+            <p class="text-gray-600 text-sm">
+              Ces mentions légales sont susceptibles d'être modifiées à tout moment. Nous vous
+              invitons à les consulter régulièrement.
+            </p>
+          </div>
+        </div>
+
+        <!-- Back to home -->
+        <div class="mt-12 text-center">
+          <a
+            href="../index.html"
+            class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold"
+          >
+            <i class="fas fa-arrow-left mr-2"></i>
+            Retour à l'accueil
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-2xl font-bold mb-4">ROVEN</h3>
+            <p class="text-gray-400">
+              Studio freelance spécialisé en création de sites vitrines professionnels.
+            </p>
+          </div>
+          <div class="flex space-x-6 mb-8 md:mb-0">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+          </div>
+          <div>
+            <p class="text-gray-400 text-sm text-center md:text-right">
+              © 2024 ROVEN. Tous droits réservés.
+            </p>
+            <p class="text-gray-400 text-sm text-center md:text-right mt-2">
+              <a
+                href="roven-mentions-legales.html"
+                class="hover:text-white transition-colors duration-300"
+                >Mentions légales</a
+              >
+              |
+              <a
+                href="roven-politique-confidentialite.html"
+                class="hover:text-white transition-colors duration-300"
+                >Confidentialité</a
+              >
+              |
+              <a
+                href="roven-conditions-generales-vente.html"
+                class="hover:text-white transition-colors duration-300"
+                >CGV</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-500 text-sm">
+            SIRET : <span class="placeholder">En cours d’immatriculation</span> • TVA :
+            <span class="placeholder">Non applicable</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Set current date
+      const now = new Date();
+      const options = { day: 'numeric', month: 'long', year: 'numeric' };
+      document.getElementById('current-date').textContent = now.toLocaleDateString(
+        'fr-FR',
+        options,
+      );
+
+      // Mobile menu toggle
+      document.getElementById('mobile-menu-button').addEventListener('click', function () {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth',
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
