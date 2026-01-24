@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Italia - Pizzeria Traditionnelle Martinique</title>
+    <meta name="description" content="Pizza Italia Fort-de-France : pizzas traditionnelles, produits frais, qualité au meilleur prix. Commandez au 0596 63 11 14">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pizza-yellow': '#F6E08B',
+                        'pizza-red': '#C91F2D',
+                        'pizza-green': '#1F7A3A',
+                        'pizza-dark': '#1A1A1A'
+                    },
+                    fontFamily: {
+                        'heading': ['Roboto Slab', 'serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        .section-divider {
+            border-top: 3px dashed #C91F2D;
+            margin: 3rem auto;
+            width: 80px;
+        }
+        .menu-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.875rem;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .hours-row:hover {
+            background-color: rgba(246, 224, 139, 0.3);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        .pizza-pattern {
+            background-image: radial-gradient(#C91F2D 2px, transparent 2px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+        .points-badge {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="font-body text-pizza-dark bg-pizza-yellow">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-pizza-red shadow-lg">
+        <div class="container mx-auto px-4">
+            <nav class="flex flex-col md:flex-row justify-between items-center py-4">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-pizza-slice text-2xl text-white mr-3"></i>
+                    <h1 class="text-2xl font-heading font-bold text-white">PIZZA ITALIA</h1>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                    <a href="#presentation" class="text-white hover:text-pizza-yellow font-bold transition-colors py-2 px-3 bg-pizza-red hover:bg-red-800 rounded-lg">Présentation</a>
+                    <a href="#menu" class="text-white hover:text-pizza-yellow font-bold transition-colors py-2 px-3 bg-pizza-red hover:bg-red-800 rounded-lg">Menu</a>
+                    <a href="#horaires" class="text-white hover:text-pizza-yellow font-bold transition-colors py-2 px-3 bg-pizza-red hover:bg-red-800 rounded-lg">Horaires</a>
+                    <a href="#contact" class="text-white hover:text-pizza-yellow font-bold transition-colors py-2 px-3 bg-pizza-red hover:bg-red-800 rounded-lg">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-pizza-red text-white py-20">
+        <div class="absolute inset-0 pizza-pattern"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <h2 class="text-5xl md:text-6xl font-heading font-bold mb-6">PIZZA ITALIA</h2>
+            <p class="text-2xl md:text-3xl mb-10 italic">La qualité au meilleur prix</p>
+            
+            <div class="flex flex-col sm:flex-row gap-6 justify-center mt-12">
+                <a href="#menu" class="bg-white text-pizza-red hover:bg-pizza-yellow font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-utensils mr-3"></i>Voir la carte
+                </a>
+                <a href="tel:0596631114" class="bg-pizza-green hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-phone mr-3"></i>Appeler : 0596 63 11 14
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Présentation Section -->
+    <section id="presentation" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-10 text-pizza-red">
+                    <i class="fas fa-store mr-3"></i>Notre Pizzeria
+                </h2>
+                
+                <div class="bg-pizza-yellow border-4 border-pizza-red rounded-xl p-8 mb-12">
+                    <p class="text-xl text-center font-bold text-pizza-dark">
+                        Depuis 2000, Pizza Italia vous sert des pizzas traditionnelles préparées avec passion et des produits frais de qualité, pour un rapport qualité-prix imbattable à Fort-de-France.
+                    </p>
+                </div>
+                
+                <!-- Programme Fidélité - Nouveau bloc -->
+                <div class="bg-white border-4 border-pizza-green rounded-xl p-6 mb-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="points-badge bg-pizza-red text-white">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-pizza-green">Programme Fidélité – Système de Points</h3>
+                    </div>
+                    
+                    <p class="text-gray-700 mb-6">À chaque pizza achetée, des points sont attribués directement sur la boîte, selon la taille de la pizza !</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center bg-pizza-yellow bg-opacity-30 p-4 rounded-lg border border-pizza-yellow">
+                            <div class="points-badge bg-pizza-green text-white">15</div>
+                            <div>
+                                <h4 class="font-bold text-pizza-dark">Pizza Petite</h4>
+                                <p class="text-gray-700">Valeur 9,00 €</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center bg-pizza-yellow bg-opacity-30 p-4 rounded-lg border border-pizza-yellow">
+                            <div class="points-badge bg-pizza-green text-white">20</div>
+                            <div>
+                                <h4 class="font-bold text-pizza-dark">Pizza Moyenne</h4>
+                                <p class="text-gray-700">Valeur 12,00 €</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center bg-pizza-yellow bg-opacity-30 p-4 rounded-lg border border-pizza-yellow">
+                            <div class="points-badge bg-pizza-green text-white">30</div>
+                            <div>
+                                <h4 class="font-bold text-pizza-dark">Pizza Grande</h4>
+                                <p class="text-gray-700">Valeur 17,90 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-pizza-green bg-opacity-20 rounded-lg">
+                        <p class="text-center text-pizza-dark">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Les points sont collectés sur les boîtes de pizzas et doivent être présentés lors de l’échange.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Pack Famille - Nouveau bloc -->
+                <div class="bg-white border-4 border-pizza-red rounded-xl p-6 mb-12 shadow-lg relative">
+                    <div class="menu-badge bg-pizza-green text-white">OFFRE SPÉCIALE</div>
+                    <div class="flex items-center mb-6">
+                        <div class="points-badge bg-pizza-red text-white">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-pizza-red">Pack Famille</h3>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <p class="text-3xl font-bold text-pizza-green mb-4">2 grandes pizzas achetées = 1 boisson 2 litres OFFERTE</p>
+                        <p class="text-xl text-pizza-dark">Idéal pour les repas en famille ou entre amis</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-300 text-center">
+                            <i class="fas fa-pizza-slice text-3xl text-pizza-red mb-3"></i>
+                            <p class="font-bold text-pizza-dark">2 grandes pizzas</p>
+                            <p class="text-gray-700">au choix</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-300 text-center">
+                            <i class="fas fa-plus text-3xl text-pizza-green mb-3"></i>
+                            <p class="font-bold text-pizza-dark">Plus</p>
+                            <p class="text-gray-700">offerte</p>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-4 rounded-lg border border-gray-300 text-center">
+                            <i class="fas fa-wine-bottle text-3xl text-pizza-red mb-3"></i>
+                            <p class="font-bold text-pizza-dark">Boisson 2L</p>
+                            <p class="text-gray-700">Coca, Sprite ou Ice Tea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="p-4 bg-pizza-red bg-opacity-10 rounded-lg border border-pizza-red">
+                        <p class="text-center font-bold text-pizza-red">
+                            <i class="fas fa-bolt mr-2"></i>
+                            Livraisons express disponibles pour cette offre
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-white border-2 border-pizza-green rounded-xl p-6 text-center shadow-lg">
+                        <div class="contact-icon bg-pizza-green text-white mx-auto mb-4">
+                            <i class="fas fa-bolt text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pizza-dark mb-3">Rapide</h3>
+                        <p class="text-gray-700">Préparation en 15 minutes maximum, service efficace pour une commande sans attente inutile.</p>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-pizza-green rounded-xl p-6 text-center shadow-lg">
+                        <div class="contact-icon bg-pizza-green text-white mx-auto mb-4">
+                            <i class="fas fa-leaf text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pizza-dark mb-3">Produits frais</h3>
+                        <p class="text-gray-700">Ingrédients soigneusement sélectionnés, pâte maison préparée quotidiennement, saveurs authentiques.</p>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-pizza-green rounded-xl p-6 text-center shadow-lg">
+                        <div class="contact-icon bg-pizza-green text-white mx-auto mb-4">
+                            <i class="fas fa-weight text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-pizza-dark mb-3">Portions généreuses</h3>
+                        <p class="text-gray-700">Nos pizzas sont copieuses pour satisfaire les plus gros appétits. Une vraie valeur sûre !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-16 bg-pizza-yellow">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-pizza-red">
+                <i class="fas fa-utensils mr-3"></i>Notre Carte
+            </h2>
+            
+            <!-- Happy Hour Banner -->
+            <div class="bg-pizza-red text-white rounded-xl p-6 mb-12 text-center shadow-lg relative">
+                <div class="menu-badge bg-pizza-green">HAPPY HOUR</div>
+                <h3 class="text-2xl font-bold mb-2">Promotion du moment</h3>
+                <p class="text-xl">-10% sur les pizzas moyenne et grandes de 18h00 à 19h00 <strong>sur place !</strong></p>
+                <p class="text-sm mt-2 opacity-90"><em>Un grand choix de produits savoureux et colorés</em></p>
+            </div>
+
+            <!-- Nouveau -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-10 border-4 border-pizza-green">
+                <h3 class="text-2xl font-heading font-bold text-pizza-green mb-6 flex items-center">
+                    <i class="fas fa-pizza-slice mr-3"></i>Nouveautés
+                </h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-lg">
+                        <thead class="bg-pizza-green text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left rounded-tl-lg">Nom</th>
+                                <th class="py-3 px-4 text-left">Ingrédients</th>
+                                <th class="py-3 px-4 text-left">Petite</th>
+                                <th class="py-3 px-4 text-left">Moyenne</th>
+                                <th class="py-3 px-4 text-left rounded-tr-lg">Grande</th>
+                            </tr>
+                        </thead>
+                        <tbody>                       
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    SAUCISSE
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, saucisse de poulet, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">18,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    ALSACIENNE
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, jambon, lardons, pommes de terre, crème fraîche</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    CHÈVRE MIEL
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, chèvre, miel, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    PIZZA DU CHEF
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, bœuf épicé, chèvre, chorizo, lardons</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Pizzas Sauce Tomate -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-10 border-4 border-pizza-red">
+                <h3 class="text-2xl font-heading font-bold text-pizza-red mb-6 flex items-center">
+                    <i class="fas fa-pizza-slice mr-3"></i>Pizzas base Sauce Tomate
+                </h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-lg">
+                        <thead class="bg-pizza-red text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left rounded-tl-lg">Nom</th>
+                                <th class="py-3 px-4 text-left">Ingrédients</th>
+                                <th class="py-3 px-4 text-left">Petite</th>
+                                <th class="py-3 px-4 text-left">Moyenne</th>
+                                <th class="py-3 px-4 text-left rounded-tr-lg">Grande</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">ITALIA</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, origan, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">7,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">16,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">CLASSICA</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, jambon, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">8,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">REINE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, jambon, champignons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">PASSION</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, chorizo, oignons, origan, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">NAPOLITAINE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, anchois, câpres, persillade, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">PROVENÇALE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, thon, oignons, origan, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">VESUVIO</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, lardons, œuf battu, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">VÉGÉTARIENNE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, oignons, poivrons, tomates fraîches, champignons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">17,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">GOURMANDE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, merguez, champignons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">18,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">ORIENTALE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, merguez, œuf, poivrons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">18,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">HAWAÏENNE</td>
+                                <td class="py-4 px-4">Sauce tomate, emmental, olives, jambon, ananas</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">19,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">TROIS FROMAGES</td>
+                                <td class="py-4 px-4">Sauce tomate, roquefort, emmental, chèvre, origan, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">19,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">BORSALINO</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, jambon, merguez, champignons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">19,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">VENDETTA</td>
+                                <td class="py-4 px-4">Bœuf épicé, sauce tomate, fromage, persillade</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">19,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">FAMILIALE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, poulet fumé, crème fraîche, poivrons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">MARINE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, morue, oignons, crème fraîche, persillade</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">ROYALE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, crevettes, poivrons, olives, champignons, persillade</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">ROBUSTA</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, poulet, chorizo, oignons, champignons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">FRUITS DE MER</td>
+                                <td class="py-4 px-4">Sauce tomate, cocktail de fruits de mer, olives, fromage, persillade</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">OCÉANE</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, saumon, oignons, crème fraîche, persillade, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">BAMBA</td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, crevettes, jambon, merguez, champignons, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    SAUCISSE
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, saucisse de poulet, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">9,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">12,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">18,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    ALSACIENNE
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, jambon, lardons, pommes de terre, crème fraîche</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    CHÈVRE MIEL
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, chèvre, miel, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold relative">
+                                    PIZZA DU CHEF
+                                    <span class="menu-badge bg-pizza-red text-white text-xs">NOUVEAU</span>
+                                </td>
+                                <td class="py-4 px-4">Sauce tomate, fromage, bœuf épicé, chèvre, chorizo, lardons</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">SUPER ITALIA</td>
+                                <td class="py-4 px-4">La pizza Italia + 5 garnitures au choix</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Pizzas Crème -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-10 border-4 border-pizza-green">
+                <h3 class="text-2xl font-heading font-bold text-pizza-green mb-6 flex items-center">
+                    <i class="fas fa-pizza-slice mr-3"></i>Pizzas base Crème Fraîche
+                </h3>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full text-lg">
+                        <thead class="bg-pizza-green text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left rounded-tl-lg">Nom</th>
+                                <th class="py-3 px-4 text-left">Ingrédients</th>
+                                <th class="py-3 px-4 text-left">Petite</th>
+                                <th class="py-3 px-4 text-left">Moyenne</th>
+                                <th class="py-3 px-4 text-left rounded-tr-lg">Grande</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">CAPRICCIOSA</td>
+                                <td class="py-4 px-4">Crème fraîche, fromage, lardons, oignons, origan, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">19,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">PALERME</td>
+                                <td class="py-4 px-4">Crème fraîche, thon, fromage, oignons, origan, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">10,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">19,00€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">ALASKA</td>
+                                <td class="py-4 px-4">Crème fraîche, saumon, fromage, oignons, persillade, olives</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">14,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                            <tr class="border-b border-gray-200 hover:bg-pizza-yellow">
+                                <td class="py-4 px-4 font-bold">TRADITIONNELLE</td>
+                                <td class="py-4 px-4">Crème fraîche, jambon, lardons, fromage, pommes de terre</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">11,00€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">15,90€</td>
+                                <td class="py-4 px-4 font-bold text-pizza-green">22,90€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Nouvelle Catégorie : Glaces -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-10 border-4 border-pizza-red">
+                <h3 class="text-2xl font-heading font-bold text-pizza-red mb-6 flex items-center">
+                    <i class="fas fa-ice-cream mr-3"></i>Glaces
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-ice-cream text-pizza-red text-xl mr-3"></i>
+                                <div>
+                                    <span class="font-bold text-lg">Royal cône</span>
+                                </div>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2,50€</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-ice-cream text-pizza-red text-xl mr-3"></i>
+                                <div>
+                                    <span class="font-bold text-lg">P'tipo</span>
+                                </div>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2,50€</span>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-snowflake text-pizza-red text-xl mr-3"></i>
+                                <div>
+                                    <span class="font-bold text-lg">Floup</span>
+                                </div>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">1,00€</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Boissons -->
+            <div class="bg-white rounded-xl shadow-lg p-6 border-4 border-pizza-green">
+                <h3 class="text-2xl font-heading font-bold text-pizza-green mb-6 flex items-center">
+                    <i class="fas fa-wine-glass-alt mr-3"></i>Boissons
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-cocktail text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Sodas</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">...</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-cocktail text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Coca-cola</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">...</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-cocktail text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Mont pele</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.50€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">...</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-cocktail text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Oasis</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">...</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-cocktail text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Caresse antillaise</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">3.50€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">1L</p>
+                    </div>         
+                    
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-tint text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Chanflor</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">1L</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-tint text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Didier</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">50cl</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-beer text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Malta Loraine</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.50€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">...</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-beer text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Heineken</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">2.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">25cl</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-beer text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Heineken</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">3.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">50cl</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-beer text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Loraine</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">3.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">50cl</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-beer text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Portier 39</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">3.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">...</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-beer text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Desperados</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">3.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">33cl</p>
+                    </div>    
+
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-300">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-wine-glass text-pizza-green text-xl mr-3"></i>
+                                <span class="font-bold text-lg">Vin</span>
+                            </div>
+                            <span class="font-bold text-pizza-green text-xl">4.00€</span>
+                        </div>
+                        <p class="text-gray-600 mt-2">25cl</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
+
+    <!-- Horaires Section -->
+    <section id="horaires" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-pizza-red">
+                <i class="fas fa-clock mr-3"></i>Horaires d'Ouverture
+            </h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-pizza-yellow border-4 border-pizza-red rounded-xl p-8 shadow-lg">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-lg">
+                            <thead class="bg-pizza-red text-white">
+                                <tr>
+                                    <th class="py-4 px-6 text-left rounded-tl-lg">Jour</th>
+                                    <th class="py-4 px-6 text-left rounded-tr-lg">Horaires</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hours-row border-b border-gray-300">
+                                    <td class="py-4 px-6 font-bold">Lundi</td>
+                                    <td class="py-4 px-6">18h00 – 23h00</td>
+                                </tr>
+                                <tr class="hours-row border-b border-gray-300">
+                                    <td class="py-4 px-6 font-bold">Mardi</td>
+                                    <td class="py-4 px-6">18h00 – 23h00</td>
+                                </tr>
+                                <tr class="hours-row border-b border-gray-300">
+                                    <td class="py-4 px-6 font-bold">Mercredi</td>
+                                    <td class="py-4 px-6">18h00 – 23h00</td>
+                                </tr>
+                                <tr class="hours-row border-b border-gray-300">
+                                    <td class="py-4 px-6 font-bold">Jeudi</td>
+                                    <td class="py-4 px-6">18h00 – 23h00</td>
+                                </tr>
+                                <tr class="hours-row border-b border-gray-300">
+                                    <td class="py-4 px-6 font-bold">Vendredi</td>
+                                    <td class="py-4 px-6">18h00 – 23h00</td>
+                                </tr>
+                                <tr class="hours-row border-b border-gray-300">
+                                    <td class="py-4 px-6 font-bold">Samedi</td>
+                                    <td class="py-4 px-6">18h00 – 23h00</td>
+                                </tr>
+                                <tr class="hours-row">
+                                    <td class="py-4 px-6 font-bold">Dimanche</td>
+                                    <td class="py-4 px-6">18h00 – 22h00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- <div class="mt-8 p-4 bg-pizza-green bg-opacity-20 border border-pizza-green rounded-lg">
+                        <p class="text-pizza-dark font-bold text-center">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            Fermeture annuelle : du 1er au 15 août
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-pizza-yellow">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-pizza-red">
+                <i class="fas fa-phone-alt mr-3"></i>Contact & Accès
+            </h2>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- Bloc Livraison - Nouveau -->
+                <div class="bg-white border-4 border-pizza-green rounded-xl p-6 mb-10 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="points-badge bg-pizza-red text-white">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold text-pizza-green">Livraison à Domicile</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-pizza-yellow bg-opacity-30 p-4 rounded-lg border border-pizza-yellow">
+                            <h4 class="font-bold text-pizza-red text-xl mb-2 flex items-center">
+                                <i class="fas fa-check-circle mr-2"></i> Gratuite
+                            </h4>
+                            <p class="text-gray-700">Livraison gratuite à domicile – secteurs Fort-de-France et Schœlcher.</p>
+                        </div>
+                        
+                        <div class="bg-pizza-yellow bg-opacity-30 p-4 rounded-lg border border-pizza-yellow">
+                            <h4 class="font-bold text-pizza-red text-xl mb-2 flex items-center">
+                                <i class="fas fa-car mr-2"></i> Zones couvertes
+                            </h4>
+                            <ul class="text-gray-700 space-y-1">
+                                <li>• Fort-de-France centre</li>
+                                <li>• Schœlcher centre</li>
+                                <li>• Les environs proches</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-pizza-green bg-opacity-20 rounded-lg">
+                        <p class="text-center text-pizza-dark">
+                            <i class="fas fa-clock mr-2"></i>
+                            Délai de livraison moyen : 30-45 minutes selon le secteur
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                    <!-- Informations de contact -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border-4 border-pizza-green">
+                        <h3 class="text-2xl font-heading font-bold text-pizza-green mb-8">Informations</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="contact-icon bg-pizza-red text-white flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-pizza-dark mb-2">Adresse</h4>
+                                    <p class="text-gray-700 text-lg">2 Rue Aurelie Dicanot<br>Fort-de-France 97200<br>Martinique</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="contact-icon bg-pizza-red text-white flex-shrink-0">
+                                    <i class="fas fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-pizza-dark mb-2">Téléphone</h4>
+                                    <p class="text-gray-700 text-lg font-bold">0596 63 11 14</p>
+                                    <p class="text-gray-600 text-sm mt-1">Pour livraison ou commande à récupérer</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="contact-icon bg-pizza-red text-white flex-shrink-0">
+                                    <i class="fas fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-pizza-dark mb-2">Email</h4>
+                                    <p class="text-gray-700 text-lg">sarlpizzaitalia@gmail.com</p>
+                                    <p class="text-gray-600 text-sm mt-1">Réponse sous 24h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href="tel:0596631114" class="bg-pizza-green hover:bg-green-700 text-white font-bold py-4 px-6 rounded-lg text-center transition-colors flex items-center justify-center">
+                                <i class="fas fa-phone mr-3"></i>Appeler maintenant
+                            </a>
+                            <a href="https://maps.google.com/?q=12+Rue+de+la+Pizza,+97200+Fort-de-France" class="bg-pizza-red hover:bg-red-700 text-white font-bold py-4 px-6 rounded-lg text-center transition-colors flex items-center justify-center">
+                                <i class="fas fa-map-marked-alt mr-3"></i>Itinéraire Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Carte placeholder -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border-4 border-pizza-red flex flex-col">
+                        <h3 class="text-2xl font-heading font-bold text-pizza-red mb-6">Notre Localisation</h3>
+                        
+                        <div class="flex-grow bg-gray-100 rounded-lg overflow-hidden border-2 border-gray-300">
+                            <div class="h-full flex flex-col items-center justify-center p-8 text-center">
+                                <div class="mb-6">
+                                    <i class="fas fa-map-marked-alt text-6xl text-pizza-red mb-4"></i>
+                                    <h4 class="text-2xl font-bold text-pizza-dark mb-2">Fort-de-France Centre</h4>
+                                    <p class="text-gray-700">Sortie Rocade – Pont de Chaînes</p>
+                                </div>
+                                
+                                <div class="bg-pizza-yellow border border-pizza-red rounded-lg p-4 max-w-sm">
+                                    <h5 class="font-bold text-pizza-dark mb-2">Accès facile</h5>
+                                    <ul class="text-left text-gray-700 space-y-2">
+                                        <li class="flex items-center">
+                                            <i class="fas fa-road text-pizza-green mr-2"></i>
+                                            <span>Situé à la sortie de la rocade</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-car text-pizza-green mr-2"></i>
+                                            <span>Accès rapide en voiture</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <i class="fas fa-map-marker-alt text-pizza-green mr-2"></i>
+                                            <span>Zone facilement identifiable</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- <div class="mt-6 p-4 bg-pizza-green bg-opacity-20 rounded-lg">
+                            <p class="text-center text-pizza-dark">
+                                <i class="fas fa-car mr-2"></i>
+                                Livraison gratuite dans un rayon de 3km à partir de 20€ d'achat
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pizza-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start mb-4">
+                        <i class="fas fa-pizza-slice text-2xl text-pizza-yellow mr-3"></i>
+                        <h3 class="text-2xl font-heading font-bold text-pizza-yellow">PIZZA ITALIA</h3>
+                    </div>
+                    <p class="text-gray-300">Pizzeria traditionnelle depuis 2000</p>
+                    <p class="text-gray-400 text-sm mt-2">© <span id="currentYear"></span> Pizza Italia - Tous droits réservés</p>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <div class="mb-4">
+                        <a href="tel:0596631114" class="text-xl font-bold text-pizza-yellow hover:text-yellow-300">
+                            <i class="fas fa-phone mr-2"></i>0596 63 11 14
+                        </a>
+                    </div>
+                    <div class="text-gray-400 text-sm">
+                        <p>Restaurant déclaré</p>
+                        <p>Respect des normes sanitaires en vigueur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Highlight current day in hours table
+        function highlightCurrentDay() {
+            const days = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
+            const today = new Date().getDay(); // 0 = dimanche, 1 = lundi, etc.
+            const todayName = days[today];
+            
+            const rows = document.querySelectorAll('#horaires tbody tr');
+            rows.forEach(row => {
+                const dayCell = row.querySelector('td:first-child');
+                if (dayCell && dayCell.textContent.toLowerCase().includes(todayName)) {
+                    row.classList.add('bg-pizza-red', 'bg-opacity-20');
+                    dayCell.innerHTML = `<strong class="text-pizza-red">${dayCell.textContent} (AUJOURD'HUI)</strong>`;
+                }
+            });
+        }
+        
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            highlightCurrentDay();
+            
+            // Add click handlers for call buttons to track interactions
+            document.querySelectorAll('a[href^="tel:"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    console.log('Call button clicked:', this.href);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

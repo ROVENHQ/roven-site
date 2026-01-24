@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA STRATÉGIE | Conseil en Stratégie & Croissance pour Entreprises</title>
+    <meta name="description" content="Cabinet de conseil en stratégie et croissance pour entreprises, dirigeants et indépendants. Accélérez votre développement avec notre expertise.">
+    <meta name="keywords" content="conseil stratégie, croissance entreprise, optimisation processus, accompagnement dirigeants">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0F766E",
+                        dark: "#0B0F19",
+                        light: "#E5E7EB"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        @media (max-width: 640px) {
+            .section-padding {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-dark bg-white">
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#accueil" class="text-2xl font-bold text-primary">NOVA<span class="text-dark">STRATÉGIE</span></a>
+                
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-dark hover:text-primary transition-colors duration-300">Accueil</a>
+                    <a href="#expertises" class="text-dark hover:text-primary transition-colors duration-300">Expertises</a>
+                    <a href="#methode" class="text-dark hover:text-primary transition-colors duration-300">Méthode</a>
+                    <a href="#resultats" class="text-dark hover:text-primary transition-colors duration-300">Résultats</a>
+                    <a href="#apropos" class="text-dark hover:text-primary transition-colors duration-300">À propos</a>
+                    <a href="#contact" class="text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                </div>
+
+                <a href="#contact" class="hidden md:inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                    Demander un diagnostic
+                </a>
+            </div>
+
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-4 pb-4">
+                <a href="#accueil" class="block text-dark hover:text-primary transition-colors duration-300">Accueil</a>
+                <a href="#expertises" class="block text-dark hover:text-primary transition-colors duration-300">Expertises</a>
+                <a href="#methode" class="block text-dark hover:text-primary transition-colors duration-300">Méthode</a>
+                <a href="#resultats" class="block text-dark hover:text-primary transition-colors duration-300">Résultats</a>
+                <a href="#apropos" class="block text-dark hover:text-primary transition-colors duration-300">À propos</a>
+                <a href="#contact" class="block text-dark hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="#contact" class="inline-block bg-primary text-white px-6 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300">
+                    Demander un diagnostic
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="accueil" class="pt-24 section-padding bg-gradient-to-br from-white to-light">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center animate-fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                        Accélérez la croissance de <span class="text-primary">votre entreprise</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                        Cabinet de conseil en stratégie & croissance pour entreprises ambitieuses. 
+                        Des solutions sur-mesure pour transformer vos défis en opportunités.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                            Demander un diagnostic gratuit
+                        </a>
+                        <a href="#methode" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-all duration-300">
+                            Découvrir notre méthode
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertises Section -->
+        <section id="expertises" class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos Expertises</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Des compétences pointues pour répondre à tous vos enjeux stratégiques
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-light">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-chess-king text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Stratégie d'entreprise</h3>
+                        <p class="text-gray-600">
+                            Définition de votre vision stratégique, analyse de marché et positionnement concurrentiel pour une croissance durable.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-light">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-cogs text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Optimisation des processus</h3>
+                        <p class="text-gray-600">
+                            Amélioration de l'efficacité opérationnelle, réduction des coûts et augmentation de la productivité.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-light">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-user-tie text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Accompagnement dirigeants</h3>
+                        <p class="text-gray-600">
+                            Coaching personnalisé pour leaders, développement du leadership et gestion du changement.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-light">
+                        <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                            <i class="fas fa-chart-line text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Croissance & structuration</h3>
+                        <p class="text-gray-600">
+                            Scaling de votre organisation, développement commercial et préparation aux levées de fonds.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Méthode Section -->
+        <section id="methode" class="section-padding bg-light">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Notre Méthode</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Un processus rigoureux en 4 étapes pour garantir vos résultats
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 -->
+                    <div class="relative">
+                        <div class="bg-white rounded-xl p-8 shadow-lg h-full">
+                            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-6">
+                                1
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Analyse</h3>
+                            <p class="text-gray-600">
+                                Diagnostic approfondi de votre situation, identification des leviers de croissance et des points de blocage.
+                            </p>
+                        </div>
+                        <div class="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                            <i class="fas fa-arrow-right text-primary text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative">
+                        <div class="bg-white rounded-xl p-8 shadow-lg h-full">
+                            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-6">
+                                2
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Stratégie</h3>
+                            <p class="text-gray-600">
+                                Élaboration d'un plan d'action personnalisé avec objectifs clairs, roadmap et indicateurs de succès.
+                            </p>
+                        </div>
+                        <div class="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                            <i class="fas fa-arrow-right text-primary text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative">
+                        <div class="bg-white rounded-xl p-8 shadow-lg h-full">
+                            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-6">
+                                3
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Mise en œuvre</h3>
+                            <p class="text-gray-600">
+                                Accompagnement opérationnel pour la mise en place des solutions avec votre équipe.
+                            </p>
+                        </div>
+                        <div class="hidden lg:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                            <i class="fas fa-arrow-right text-primary text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative">
+                        <div class="bg-white rounded-xl p-8 shadow-lg h-full">
+                            <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mb-6">
+                                4
+                            </div>
+                            <h3 class="text-xl font-bold mb-4">Suivi</h3>
+                            <p class="text-gray-600">
+                                Mesure des résultats, ajustements si nécessaire et transfert de compétences pour l'autonomie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Résultats Section -->
+        <section id="resultats" class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Nos Résultats</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        L'impact mesurable de notre accompagnement sur la performance de nos clients
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Stat 1 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-primary mb-4">+89%</div>
+                        <div class="text-xl font-semibold mb-2">Performance</div>
+                        <p class="text-gray-600">Amélioration moyenne de la performance opérationnelle</p>
+                    </div>
+
+                    <!-- Stat 2 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-primary mb-4">95%</div>
+                        <div class="text-xl font-semibold mb-2">Clarté</div>
+                        <p class="text-gray-600">De nos clients déclarent une vision stratégique plus claire</p>
+                    </div>
+
+                    <!-- Stat 3 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-primary mb-4">+67%</div>
+                        <div class="text-xl font-semibold mb-2">Efficacité</div>
+                        <p class="text-gray-600">Gain d'efficacité dans la prise de décision</p>
+                    </div>
+
+                    <!-- Stat 4 -->
+                    <div class="text-center">
+                        <div class="text-5xl font-bold text-primary mb-4">4.9/5</div>
+                        <div class="text-xl font-semibold mb-2">Satisfaction</div>
+                        <p class="text-gray-600">Note moyenne de satisfaction client</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- À propos Section -->
+        <section id="apropos" class="section-padding bg-light">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">À propos de NOVA STRATÉGIE</h2>
+                        <p class="text-gray-600 mb-6">
+                            Fondé par des experts du conseil en stratégie, NOVA STRATÉGIE accompagne les entreprises 
+                            ambitieuses dans leur développement et leur transformation. Notre mission : vous donner 
+                            les clés pour prendre des décisions éclairées et atteindre vos objectifs de croissance.
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-bullseye text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Clarté</h4>
+                                    <p class="text-gray-600">Nous simplifions la complexité pour une vision stratégique limpide</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-rocket text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Efficacité</h4>
+                                    <p class="text-gray-600">Des solutions concrètes et des résultats mesurables rapidement</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-user-cog text-primary mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Sur-mesure</h4>
+                                    <p class="text-gray-600">Chaque accompagnement est adapté à vos spécificités et enjeux</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <img 
+                            src="https://picsum.photos/600/400?random=1" 
+                            alt="Équipe NOVA STRATÉGIE en réunion stratégique" 
+                            class="rounded-xl shadow-2xl w-full"
+                            loading="lazy"
+                        >
+                        <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-xl max-w-xs">
+                            <div class="text-3xl font-bold mb-2">15+</div>
+                            <div class="text-lg">Années d'expertise cumulée</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section-padding bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Contactez-nous</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Prêt à transformer votre entreprise ? Discutons de vos projets
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-bold mb-6">Prenez rendez-vous</h3>
+                            <p class="text-gray-600 mb-8">
+                                Réservez un diagnostic stratégique gratuit de 30 minutes pour évaluer 
+                                vos opportunités de croissance.
+                            </p>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Email</div>
+                                        <a href="mailto:contact@novastrategie.com" class="text-primary hover:underline">
+                                            contact@novastrategie.com
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Téléphone</div>
+                                        <a href="tel:+33123456789" class="text-primary hover:underline">
+                                            +33 1 23 45 67 89
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <div class="font-semibold">Adresse</div>
+                                        <div class="text-gray-600">123 Avenue des Champs-Élysées, 75008 Paris</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nom complet *</label>
+                                    <input type="text" id="name" name="name" required 
+                                           class="w-full px-4 py-3 border border-light rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                </div>
+                                
+                                <div>
+                                    <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Entreprise</label>
+                                    <input type="text" id="company" name="company" 
+                                           class="w-full px-4 py-3 border border-light rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                </div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                                    <input type="email" id="email" name="email" required 
+                                           class="w-full px-4 py-3 border border-light rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+                                    <input type="tel" id="phone" name="phone" 
+                                           class="w-full px-4 py-3 border border-light rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="4" required 
+                                          class="w-full px-4 py-3 border border-light rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300"></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="privacy" name="privacy" required 
+                                       class="w-4 h-4 text-primary border-light rounded focus:ring-primary">
+                                <label for="privacy" class="ml-2 text-sm text-gray-600">
+                                    J'accepte la politique de confidentialité *
+                                </label>
+                            </div>
+                            
+                            <button type="submit" 
+                                    class="w-full bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-300 transform hover:-translate-y-1">
+                                Envoyer ma demande
+                            </button>
+                        </form>
+                        
+                        <div id="confirmation-message" class="hidden mt-6 p-6 bg-green-50 border border-green-200 rounded-lg">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold text-green-800">Message envoyé avec succès !</h4>
+                                    <p class="text-green-600">Nous vous répondrons dans les 24 heures ouvrables.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-white mb-4">NOVA<span class="text-primary">STRATÉGIE</span></div>
+                    <p class="text-gray-400">
+                        Cabinet de conseil en stratégie & croissance pour entreprises ambitieuses.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#accueil" class="text-gray-400 hover:text-white transition-colors duration-300">Accueil</a></li>
+                        <li><a href="#expertises" class="text-gray-400 hover:text-white transition-colors duration-300">Expertises</a></li>
+                        <li><a href="#methode" class="text-gray-400 hover:text-white transition-colors duration-300">Méthode</a></li>
+                        <li><a href="#resultats" class="text-gray-400 hover:text-white transition-colors duration-300">Résultats</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Informations</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#apropos" class="text-gray-400 hover:text-white transition-colors duration-300">À propos</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Mentions légales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Suivez-nous</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 NOVA STRATÉGIE. Tous droits réservés.</p>
+                <p class="mt-2 text-sm">Cabinet de conseil en stratégie et croissance - SIRET : 123 456 789 00000</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define data at the beginning
+        const navigationItems = [
+            { "id": 1, "label": "Accueil", "href": "#accueil" },
+            { "id": 2, "label": "Expertises", "href": "#expertises" },
+            { "id": 3, "label": "Méthode", "href": "#methode" },
+            { "id": 4, "label": "Résultats", "href": "#resultats" },
+            { "id": 5, "label": "À propos", "href": "#apropos" },
+            { "id": 6, "label": "Contact", "href": "#contact" }
+        ];
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuButton.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuButton.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact form submission
+        const contactForm = document.getElementById('contact-form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulate form submission
+            setTimeout(() => {
+                contactForm.reset();
+                confirmationMessage.classList.remove('hidden');
+                
+                // Hide confirmation after 5 seconds
+                setTimeout(() => {
+                    confirmationMessage.classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        });
+
+        // Add scroll animation to elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.grid > div').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('shadow-lg');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-lg');
+                header.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>

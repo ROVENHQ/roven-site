@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowly — Simplifiez vos processus digitaux</title>
+    <meta name="description" content="Flowly est une plateforme SaaS innovante qui optimise et automatise vos processus digitaux pour une efficacité maximale.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: "#667eea",
+                            DEFAULT: "#5a67d8",
+                            dark: "#4c51bf"
+                        },
+                        secondary: {
+                            light: "#76e4f7",
+                            DEFAULT: "#0bc5ea",
+                            dark: "#00b5d8"
+                        },
+                        gradient: {
+                            start: "#667eea",
+                            middle: "#764ba2",
+                            end: "#f093fb"
+                        }
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'float': 'float 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .section-hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .section-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white text-gray-800 font-inter">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 gradient-bg rounded-lg"></div>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent">Flowly</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#solution" class="text-gray-600 hover:text-primary-dark font-medium transition-colors">Solution</a>
+                    <a href="#fonctionnalites" class="text-gray-600 hover:text-primary-dark font-medium transition-colors">Fonctionnalités</a>
+                    <a href="#avantages" class="text-gray-600 hover:text-primary-dark font-medium transition-colors">Avantages</a>
+                    <a href="#process" class="text-gray-600 hover:text-primary-dark font-medium transition-colors">Processus</a>
+                </div>
+                
+                <button onclick="scrollToSection('contact')" class="bg-gradient-to-r from-gradient-start to-gradient-end text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition-shadow">
+                    Demander une démo
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 gradient-bg opacity-5"></div>
+        <div class="container mx-auto px-4 py-20 md:py-32">
+            <div class="max-w-4xl mx-auto text-center animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="block">Flowly — </span>
+                    <span class="block bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent">Simplifiez vos processus digitaux</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    La plateforme SaaS qui transforme la complexité digitale en efficacité opérationnelle. Automatisez, optimisez, excellez.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button onclick="scrollToSection('contact')" class="bg-gradient-to-r from-gradient-start to-gradient-end text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-play-circle mr-2"></i> Demander une démo
+                    </button>
+                    <button onclick="scrollToSection('solution')" class="bg-white text-primary-dark border-2 border-primary-light px-8 py-4 rounded-xl font-semibold text-lg hover:bg-primary-light hover:text-white transition-all duration-300">
+                        <i class="fas fa-search mr-2"></i> Découvrir la solution
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problème → Solution -->
+    <section id="solution" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">De la complexité à la simplicité</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nous transformons vos défis digitaux en opportunités d'efficacité</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-exclamation-triangle text-red-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Le Problème</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-times text-red-400 mr-3"></i>
+                            <span>Processus digitaux fragmentés et inefficaces</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times text-red-400 mr-3"></i>
+                            <span>Données dispersées entre multiples plateformes</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times text-red-400 mr-3"></i>
+                            <span>Temps perdu dans des tâches répétitives manuelles</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times text-red-400 mr-3"></i>
+                            <span>Manque de visibilité sur les performances opérationnelles</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover border-2 border-primary-light">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Notre Solution</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Plateforme unifiée pour tous vos processus digitaux</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Automatisation intelligente des workflows</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Analytics en temps réel pour une prise de décision éclairée</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            <span>Interface intuitive réduisant la courbe d'apprentissage</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités clés -->
+    <section id="fonctionnalites" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Fonctionnalités Clés</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Découvrez les capacités qui font la différence</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Automatisation Intelligente</h3>
+                    <p class="text-gray-600">Workflows automatisés qui s'adaptent à vos processus métier spécifiques.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Analytics Avancés</h3>
+                    <p class="text-gray-600">Tableaux de bord personnalisés avec insights en temps réel sur vos performances.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Sécurité Enterprise</h3>
+                    <p class="text-gray-600">Protocoles de sécurité de niveau enterprise avec chiffrement de bout en bout.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-plug text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Intégrations Native</h3>
+                    <p class="text-gray-600">Connectez-vous facilement à vos outils existants via notre API robuste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avantages business -->
+    <section id="avantages" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Avantages Business Concrets</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Des résultats mesurables pour votre entreprise</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-4xl font-bold text-primary-dark mb-4">+40%</div>
+                    <h3 class="text-xl font-bold mb-4">Efficacité Opérationnelle</h3>
+                    <p class="text-gray-600">Réduction du temps passé sur les tâches répétitives grâce à l'automatisation.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-4xl font-bold text-primary-dark mb-4">-60%</div>
+                    <h3 class="text-xl font-bold mb-4">Erreurs Humaines</h3>
+                    <p class="text-gray-600">Diminution significative des erreurs grâce aux workflows standardisés.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="text-4xl font-bold text-primary-dark mb-4">+85%</div>
+                    <h3 class="text-xl font-bold mb-4">Satisfaction Équipe</h3>
+                    <p class="text-gray-600">Amélioration de l'expérience collaborateur avec des outils intuitifs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aperçu produit -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Aperçu du Dashboard Flowly</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Visualisez vos données et contrôlez vos processus en un seul endroit</p>
+            </div>
+            
+            <div class="relative max-w-6xl mx-auto">
+                <div class="bg-gradient-to-r from-gradient-start to-gradient-end p-1 rounded-3xl">
+                    <div class="bg-white rounded-3xl p-2">
+                        <div class="bg-gray-900 rounded-2xl p-8">
+                            <div class="flex justify-between items-center mb-8">
+                                <div class="flex space-x-2">
+                                    <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                    <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                </div>
+                                <div class="text-gray-400">dashboard.flowly.com</div>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                                <div class="bg-gray-800 p-6 rounded-xl">
+                                    <div class="text-gray-400 text-sm mb-2">Performance</div>
+                                    <div class="text-3xl font-bold text-white">98.7%</div>
+                                    <div class="h-2 bg-gray-700 rounded-full mt-2">
+                                        <div class="h-full bg-green-500 rounded-full w-11/12"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="bg-gray-800 p-6 rounded-xl">
+                                    <div class="text-gray-400 text-sm mb-2">Tâches Automatisées</div>
+                                    <div class="text-3xl font-bold text-white">1,247</div>
+                                    <div class="text-green-400 text-sm">+12% ce mois</div>
+                                </div>
+                                
+                                <div class="bg-gray-800 p-6 rounded-xl">
+                                    <div class="text-gray-400 text-sm mb-2">Temps Économisé</div>
+                                    <div class="text-3xl font-bold text-white">342h</div>
+                                    <div class="text-green-400 text-sm">Équivalent 8.5 semaines</div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-gray-800 rounded-xl p-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <h3 class="text-xl font-bold text-white">Workflows Actifs</h3>
+                                    <span class="text-green-400">Tous opérationnels</span>
+                                </div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Onboarding Client</span>
+                                        <div class="w-24 h-2 bg-gray-700 rounded-full">
+                                            <div class="h-full bg-blue-500 rounded-full w-4/5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Traitement Factures</span>
+                                        <div class="w-24 h-2 bg-gray-700 rounded-full">
+                                            <div class="h-full bg-purple-500 rounded-full w-full"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-gray-300">Rapports Analytics</span>
+                                        <div class="w-24 h-2 bg-gray-700 rounded-full">
+                                            <div class="h-full bg-green-500 rounded-full w-2/3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process simple -->
+    <section id="process" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Votre Transformation en 3 Étapes</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Un processus simple et transparent pour des résultats rapides</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
+                        <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-white text-2xl font-bold">1</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Découverte</h3>
+                        <p class="text-gray-600">Analyse de vos processus existants et définition des objectifs.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                        <i class="fas fa-arrow-right text-primary-light text-2xl"></i>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
+                        <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                            <span class="text-white text-2xl font-bold">2</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Intégration</h3>
+                        <p class="text-gray-600">Configuration et déploiement sur mesure avec votre équipe.</p>
+                    </div>
+                    <div class="hidden md:block absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                        <i class="fas fa-arrow-right text-primary-light text-2xl"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
+                    <div class="w-20 h-20 gradient-bg rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Résultats</h3>
+                    <p class="text-gray-600">Suivi des performances et optimisation continue pour l'excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="contact" class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Prêt à transformer vos processus digitaux ?</h2>
+                <p class="text-xl mb-10 opacity-90">Discutons de votre projet et découvrez comment Flowly peut optimiser votre efficacité opérationnelle.</p>
+                
+                <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
+                    <form id="demoForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <input type="text" placeholder="Votre nom" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Votre email professionnel" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Nom de votre entreprise" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <textarea placeholder="Décrivez brièvement vos défis actuels..." rows="4" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-white text-primary-dark font-bold py-4 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+                            <i class="fas fa-calendar-check mr-2"></i> Planifier un appel découverte
+                        </button>
+                    </form>
+                    <p class="text-sm opacity-75 mt-6">Nous vous répondrons sous 24h pour planifier une démonstration personnalisée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded-lg"></div>
+                        <span class="text-2xl font-bold">Flowly</span>
+                    </div>
+                    <p class="text-gray-400">Simplifiez vos processus digitaux</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-8 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 text-sm">© 2024 Flowly SAS. Tous droits réservés.</p>
+                    <p class="text-gray-400 text-sm mt-2">
+                        <a href="#" class="hover:text-white transition-colors">Mentions légales</a> • 
+                        <a href="#" class="hover:text-white transition-colors">Politique de confidentialité</a> • 
+                        <a href="#" class="hover:text-white transition-colors">CGU</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Define data at the beginning
+        const sections = [
+            { "id": "solution", "label": "Solution" },
+            { "id": "fonctionnalites", "label": "Fonctionnalités" },
+            { "id": "avantages", "label": "Avantages" },
+            { "id": "process", "label": "Processus" },
+            { "id": "contact", "label": "Contact" }
+        ];
+
+        const formData = {
+            "name": "",
+            "email": "",
+            "company": "",
+            "challenges": ""
+        };
+
+        // Smooth scroll function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Form submission handler
+        document.getElementById('demoForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const formInputs = e.target.querySelectorAll('input, textarea');
+            formInputs.forEach(input => {
+                formData[input.name || input.placeholder.toLowerCase().replace(/[^a-z]/g, '')] = input.value;
+            });
+            
+            // Show success message
+            alert("Merci pour votre demande ! Notre équipe vous contactera dans les 24h pour planifier votre démonstration personnalisée.");
+            e.target.reset();
+        });
+
+        // Scroll animation observer
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('section-visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('section-hidden');
+            observer.observe(section);
+        });
+
+        // Navigation click handlers
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+
+        // Add hover effects to cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Initialize animations
+        window.addEventListener('load', () => {
+            document.querySelectorAll('section').forEach((section, index) => {
+                section.style.transitionDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>

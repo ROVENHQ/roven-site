@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <base target="_self" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROVEN - Sites Vitrines Professionnels</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo/favicon.ico" />
+    <meta
+      name="description"
+      content="Studio freelance spécialisé dans la création de sites vitrines professionnels. Design moderne, développement sur mesure et accompagnement personnalisé."
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <style>
+        :root {
+            --roven-blue: #2563EB;
+            --roven-black: #0B0F19;
+            --roven-white: #FFFFFF;
+            --roven-gray: #94A3B8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--roven-white);
+            color: var(--roven-black);
+            scroll-behavior: smooth;
+        }
+        
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        
+        @media (max-width: 768px) {
+            .section-padding {
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+        
+        .animate-slide-up {
+            animation: slideUp 0.8s ease-out;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--roven-blue);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1d4ed8;
+        }
+    </style> -->
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <a href="#accueil" class="flex items-center gap-1.5">
+            <img
+              src="assets/logo/MonoV1-icon.png"
+              alt="ROVEN"
+              class="h-9 w-auto translate-y-[4px]"
+            />
+            <span class="text-xl font-bold tracking-tight text-gray-900 leading-none"> ROVEN </span>
+          </a>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#services"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Services</a
+            >
+            <a
+              href="#packs"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Packs</a
+            >
+            <a
+              href="#realisations"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Réalisations</a
+            >
+            <a
+              href="#process"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >Process</a
+            >
+            <a
+              href="#ia-futur"
+              class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >À venir</a
+            >
+            <a href="#faq" class="text-gray-900 hover:text-blue-600 transition-colors duration-300"
+              >FAQ</a
+            >
+            <a
+              href="#contact"
+              class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              >Contact</a
+            >
+          </div>
+          <button class="md:hidden text-gray-900" id="mobile-menu-button">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-4 space-y-4" id="mobile-menu">
+          <a href="#services" class="block text-gray-900 hover:text-blue-600">Services</a>
+          <a href="#packs" class="block text-gray-900 hover:text-blue-600">Packs</a>
+          <a href="#realisations" class="block text-gray-900 hover:text-blue-600">Réalisations</a>
+          <a href="#process" class="block text-gray-900 hover:text-blue-600">Process</a>
+          <a href="#ia-futur" class="block text-gray-900 hover:text-blue-600">À venir</a>
+          <a href="#faq" class="block text-gray-900 hover:text-blue-600">FAQ</a>
+          <a
+            href="#contact"
+            class="block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 w-fit"
+            >Contact</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="accueil" class="pt-32 pb-20 md:pt-40 md:pb-32 px-4">
+        <div class="container mx-auto">
+          <div class="max-w-4xl mx-auto text-center animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-gray-900">
+              ROVEN — Sites vitrines professionnels
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-2xl mx-auto">
+              Votre présence en ligne, conçue pour convertir et valoriser votre expertise. Des
+              designs sur mesure qui génèrent des résultats.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact"
+                class="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                >Demander un devis</a
+              >
+              <a
+                href="#packs"
+                class="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors duration-300"
+                >Voir les packs</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-20 bg-gray-50 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Nos Services
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 animate-slide-up"
+            >
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-globe text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Site Vitrine</h3>
+              <p class="text-gray-600">
+                Création complète de votre site vitrine sur mesure, design unique et responsive pour
+                tous les appareils.
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 animate-slide-up"
+              style="animation-delay: 0.1s"
+            >
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-sync-alt text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Refonte</h3>
+              <p class="text-gray-600">
+                Modernisation de votre site existant pour améliorer l'expérience utilisateur et les
+                performances.
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 animate-slide-up"
+              style="animation-delay: 0.2s"
+            >
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-rocket text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Mise en ligne</h3>
+              <p class="text-gray-600">
+                Configuration du domaine, hébergement et déploiement de votre site avec optimisation
+                des performances.
+              </p>
+            </div>
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 animate-slide-up"
+              style="animation-delay: 0.3s"
+            >
+              <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                <i class="fas fa-tools text-2xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Maintenance</h3>
+              <p class="text-gray-600">
+                Suivi régulier, mises à jour de sécurité et support technique pour garantir la
+                stabilité de votre site.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packs Section -->
+      <section id="packs" class="py-20 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">Nos Packs</h2>
+          <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Tarifs adaptés selon le projet et vos besoins spécifiques. Chaque pack est
+            personnalisable.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-600 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900">Essentiel</h3>
+                <p class="text-gray-600">
+                  Idéal pour les petites entreprises qui souhaitent une présence en ligne efficace.
+                </p>
+              </div>
+              <div class="mb-8">
+                <div class="text-3xl font-bold mb-2 text-gray-900">Sur devis</div>
+                <p class="text-gray-500 text-sm">Tarif personnalisé selon vos besoins</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Jusqu’à 5 pages</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Design responsive</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Formulaire de contact</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">SEO de base (balises & structure)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Mise en ligne sécurisée (HTTPS)</span>
+                </li>
+                <p class="text-gray-500 text-sm">
+                  <strong>Hébergement & maintenance disponibles en option</strong>
+                </p>
+              </ul>
+              <a
+                href="#contact"
+                class="block w-full bg-gray-100 text-gray-900 text-center py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300"
+                >Demander un devis</a
+              >
+            </div>
+
+            <div class="bg-white border-2 border-blue-600 rounded-2xl p-8 shadow-xl relative">
+              <div
+                class="absolute top-0 right-0 bg-blue-600 text-white px-4 py-2 rounded-bl-lg rounded-tr-2xl font-semibold"
+              >
+                Recommandé
+              </div>
+              <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900">Pro</h3>
+                <p class="text-gray-600">Solution complète pour les entreprises en croissance</p>
+              </div>
+              <div class="mb-8">
+                <div class="text-3xl font-bold mb-2 text-gray-900">Sur devis</div>
+                <p class="text-gray-500 text-sm">Tarif adapté à votre projet</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Jusqu'à 10 pages</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Design personnalisé</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Formulaire avancé</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">SEO optimisé (structure & performances)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Analytics intégré</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Mise en ligne sécurisée (HTTPS)</span>
+                </li>
+                <p class="text-gray-500 text-sm">
+                  <strong>Option CMS (WordPress ou autre) uniquement si besoin réel</strong>
+                </p>
+                <p class="text-gray-500 text-sm">
+                  <strong>Hébergement & maintenance disponibles en option</strong>
+                </p>
+              </ul>
+              <a
+                href="#contact"
+                class="block w-full bg-blue-600 text-white text-center py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300"
+                >Demander un devis</a
+              >
+            </div>
+
+            <div
+              class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-600 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900">Premium</h3>
+                <p class="text-gray-600">Solution sur mesure pour les entreprises exigeantes</p>
+              </div>
+              <div class="mb-8">
+                <div class="text-3xl font-bold mb-2 text-gray-900">Sur devis</div>
+                <p class="text-gray-500 text-sm">Devis personnalisé après étude</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Pages illimitées</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Design exclusif</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Fonctionnalités avancées</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">SEO renforcé (stratégie avancée)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Maintenance incluse (durée définie au devis)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Formation incluse</span>
+                </li>
+              </ul>
+              <a
+                href="#contact"
+                class="block w-full bg-gray-100 text-gray-900 text-center py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300"
+                >Demander un devis</a
+              >
+            </div>
+
+            <div
+              class="bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-600 transition-all duration-300 hover:shadow-xl"
+            >
+              <div class="mb-6">
+                <h3 class="text-2xl font-bold mb-2 text-gray-900">
+                  Options Hébergement & Maintenance
+                </h3>
+                <p class="text-gray-600">(Recommandé pour un site fiable et sans contrainte)</p>
+              </div>
+              <ul class="space-y-4 mb-8">
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Hébergement moderne & sécurisé (HTTPS)</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Surveillance du site</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Sauvegardes</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Petites mises à jour de contenu</span>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check text-blue-600 mr-3"></i>
+                  <span class="text-gray-700">Support technique</span>
+                </li>
+                <p class="text-gray-500 text-sm">
+                  <strong>Option WordPress : mises à jour & sécurité incluses</strong>
+                </p>
+                <p class="text-gray-500 text-sm">
+                  <strong>Aucun engagement — résiliable à tout moment</strong>
+                </p>
+                <div class="mb-8">
+                  <div class="text-3xl font-bold mb-2 text-gray-900">Important</div>
+                  <p class="text-gray-500 text-sm">
+                    Le choix de la technologie (site statique ou WordPress) est fait selon vos
+                    besoins réels, pour garantir performance, sécurité et simplicité sur le long
+                    terme.
+                  </p>
+                </div>
+              </ul>
+              <a
+                href="#contact"
+                class="block w-full bg-gray-100 text-gray-900 text-center py-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-colors duration-300"
+                >Demander un devis</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Réalisations Section -->
+      <section id="realisations" class="py-20 bg-gray-50 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Nos Réalisations
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img
+                src="assets/img/nova.png"
+                alt="Site web pour un cabinet de consultants"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div class="p-8">
+                <h3 class="text-xl font-bold mb-3 text-gray-900">
+                  Nova Stratégie — Cabinet de conseil
+                </h3>
+                <p class="text-gray-600 mb-4">
+                  Site vitrine professionnel pour un cabinet de conseil en stratégie, avec
+                  présentation des expertises, méthode, résultats et formulaire de prise de contact.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Corporate</span
+                  >
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Moderne</span
+                  >
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Conversion</span
+                  >
+                </div>
+                <a
+                  href="pages/nova.html"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 flex items-center"
+                  >Voir le projet <i class="fas fa-arrow-right ml-2"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img
+                src="assets/img/flowly.png"
+                alt="Site pour un restaurant gastronomique"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div class="p-8">
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Flowly — Plateforme SaaS</h3>
+                <p class="text-gray-600 mb-4">
+                  Plateforme SaaS moderne dédiée à l’optimisation des processus digitaux. Interface
+                  épurée, orientée performance, avec mise en avant des fonctionnalités, bénéfices
+                  business et parcours de conversion clair.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">SaaS</span>
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Moderne</span
+                  >
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Conversion</span
+                  >
+                </div>
+                <a
+                  href="pages/flowly.html"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 flex items-center"
+                  >Voir le projet <i class="fas fa-arrow-right ml-2"></i
+                ></a>
+              </div>
+            </div>
+            <div
+              class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            >
+              <img
+                src="assets/img/pizza_italia.png"
+                alt="Pizza Italia — site vitrine"
+                class="w-full h-64 object-cover"
+                loading="lazy"
+              />
+              <div class="p-8">
+                <h3 class="text-xl font-bold mb-3 text-gray-900">Pizza Italia - Site vitrine</h3>
+                <p class="text-gray-600 mb-4">
+                  Création d’un site vitrine moderne pour une pizzeria locale, avec mise en avant de
+                  la carte, des offres et des informations pratiques.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm"
+                    >Responsive</span
+                  >
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">SEO</span>
+                  <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Food</span>
+                </div>
+                <a
+                  href="pages/pizza_italia_update.html"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300 flex items-center"
+                  >Voir le projet <i class="fas fa-arrow-right ml-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section id="process" class="py-20 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Notre Processus
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="text-center">
+              <div
+                class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+              >
+                1
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Brief</h3>
+              <p class="text-gray-600">
+                Échange approfondi pour comprendre vos objectifs, votre identité et vos besoins
+                spécifiques.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+              >
+                2
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Design</h3>
+              <p class="text-gray-600">
+                Création de maquettes personnalisées et validation des visuels avant développement.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+              >
+                3
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Validation</h3>
+              <p class="text-gray-600">
+                Développement du site et tests complets avec votre feedback à chaque étape.
+              </p>
+            </div>
+            <div class="text-center">
+              <div
+                class="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6"
+              >
+                4
+              </div>
+              <h3 class="text-xl font-bold mb-4 text-gray-900">Mise en ligne</h3>
+              <p class="text-gray-600">
+                Déploiement, formation et suivi post-lancement pour garantir le succès de votre
+                projet.
+              </p>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <p class="text-lg text-gray-600">
+              <span class="font-semibold">Délai indicatif :</span> 3 à 7 jours selon la complexité
+              et le contenu fourni.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- IA & Automatisation Section -->
+      <section id="ia-futur" class="py-20 bg-gray-50 px-4">
+        <div class="container mx-auto">
+          <div class="max-w-3xl mx-auto text-center">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6"
+            >
+              <i class="fas fa-robot text-2xl text-blue-600"></i>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+              Agents IA & automatisation : à venir
+            </h2>
+            <div class="bg-white rounded-2xl p-8 shadow-lg">
+              <p class="text-lg text-gray-600 mb-4">
+                ROVEN prépare des solutions d'automatisation et d'agents IA pour compléter les sites
+                vitrines (support, réponses automatiques, outils métiers).
+              </p>
+              <p class="text-lg text-gray-600">
+                Lancement progressif. Pour l'instant : sites vitrines sur devis.
+              </p>
+              <div
+                class="mt-6 inline-block bg-blue-50 text-blue-600 px-4 py-2 rounded-lg font-medium"
+              >
+                <i class="fas fa-clock mr-2"></i> En développement
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="py-20 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+            Questions Fréquentes
+          </h2>
+          <div class="max-w-3xl mx-auto space-y-6">
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <button class="faq-question w-full text-left flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Quels sont vos délais de réalisation ?
+                </h3>
+                <i class="fas fa-chevron-down text-blue-600"></i>
+              </button>
+              <div class="faq-answer mt-4 hidden">
+                <p class="text-gray-600">
+                  Pour un site vitrine standard, comptez entre 3 et 7 jours ouvrés une fois tous les
+                  contenus validés. Les délais peuvent varier selon la complexité du projet et la
+                  rapidité de vos retours.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <button class="faq-question w-full text-left flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Proposez-vous l'hébergement et le nom de domaine ?
+                </h3>
+                <i class="fas fa-chevron-down text-blue-600"></i>
+              </button>
+              <div class="faq-answer mt-4 hidden">
+                <p class="text-gray-600">
+                  Oui, nous pouvons nous charger de la réservation de votre nom de domaine et de la
+                  configuration d'un hébergement performant adapté à votre site. Ces services sont
+                  facturés séparément.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <button class="faq-question w-full text-left flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Les modifications sont-elles incluses ?
+                </h3>
+                <i class="fas fa-chevron-down text-blue-600"></i>
+              </button>
+              <div class="faq-answer mt-4 hidden">
+                <p class="text-gray-600">
+                  Nous incluons jusqu'à 3 rounds de modifications mineures pendant la phase de
+                  développement. Les modifications majeures ou supplémentaires après la livraison
+                  peuvent faire l'objet d'un devis complémentaire.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <button class="faq-question w-full text-left flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-900">
+                  Proposez-vous un service de maintenance ?
+                </h3>
+                <i class="fas fa-chevron-down text-blue-600"></i>
+              </button>
+              <div class="faq-answer mt-4 hidden">
+                <p class="text-gray-600">
+                  Oui, nous proposons des forfaits de maintenance mensuels ou annuels incluant mises
+                  à jour de sécurité, sauvegardes, monitoring et support technique. Demandez-nous un
+                  devis personnalisé.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 shadow-lg">
+              <button class="faq-question w-full text-left flex justify-between items-center">
+                <h3 class="text-lg font-semibold text-gray-900">Le SEO local est-il inclus ?</h3>
+                <i class="fas fa-chevron-down text-blue-600"></i>
+              </button>
+              <div class="faq-answer mt-4 hidden">
+                <p class="text-gray-600">
+                  Tous nos sites incluent une optimisation SEO de base (balises, structure,
+                  vitesse). Pour le SEO local avancé (Google My Business, citations), nous proposons
+                  un service complémentaire.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-20 bg-gray-50 px-4">
+        <div class="container mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
+            Contactez-nous
+          </h2>
+          <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            Devis gratuit, réponse sous 24h. Discutons de votre projet et trouvons la solution
+            adaptée à vos besoins.
+          </p>
+
+          <div class="flex flex-col lg:flex-row gap-12">
+            <div class="lg:w-1/2">
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/xykedwgj"
+                method="POST"
+                class="space-y-6"
+              >
+                <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+                  Chaque projet est unique. Les packs ci-dessus servent de base : décrivez-nous vos
+                  besoins pour un devis précis.
+                </p>
+                <!-- Formspree helpers -->
+                <input type="hidden" name="_subject" value="Nouvelle demande de devis — ROVEN" />
+                <input type="text" name="_gotcha" style="display: none" />
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="name" class="block text-sm font-medium mb-2 text-gray-900"
+                      >Nom complet *</label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      autocomplete="name"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="company" class="block text-sm font-medium mb-2 text-gray-900"
+                      >Entreprise</label
+                    >
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      autocomplete="organization"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="email" class="block text-sm font-medium mb-2 text-gray-900"
+                      >Email *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="_replyto"
+                      required
+                      autocomplete="email"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="phone" class="block text-sm font-medium mb-2 text-gray-900"
+                      >Téléphone</label
+                    >
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      autocomplete="tel"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="project-type" class="block text-sm font-medium mb-2 text-gray-900"
+                      >Type de projet *</label
+                    >
+                    <select
+                      id="project-type"
+                      name="project_type"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    >
+                      <option value="">Sélectionnez une option</option>
+                      <option value="Site vitrine">Site vitrine</option>
+                      <option value="Refonte site vitrine">Refonte de site vitrine</option>
+                      <option value="Autre">Autre</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label for="budget" class="block text-sm font-medium mb-2 text-gray-900"
+                      >Budget indicatif</label
+                    >
+                    <select
+                      id="budget"
+                      name="budget_range"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    >
+                      <option value="">Sélectionnez une fourchette</option>
+                      <option value="1 000 – 2 000 €">1 000 – 2 000 €</option>
+                      <option value="2 000 – 4 000 €">2 000 – 4 000 €</option>
+                      <option value="4 000 – 7 000 €">4 000 – 7 000 €</option>
+                      <option value="Plus de 7 000 €">Plus de 7 000 €</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="deadline" class="block text-sm font-medium mb-2 text-gray-900"
+                    >Délai souhaité</label
+                  >
+                  <select
+                    id="deadline"
+                    name="deadline"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  >
+                    <option value="">Sélectionnez un délai</option>
+                    <option value="Urgent (7–10 jours)">Urgent (7–10 jours)</option>
+                    <option value="Standard (2–3 semaines)">Standard (2–3 semaines)</option>
+                    <option value="Confort (1 mois)">Confort (1 mois)</option>
+                    <option value="Flexible / à discuter">Flexible / à discuter</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium mb-2 text-gray-900"
+                    >Message *</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <div class="flex items-start">
+                  <input type="checkbox" id="consent" name="consent" required class="mt-1 mr-3" />
+                  <label for="consent" class="text-sm text-gray-700">
+                    J'accepte que mes données soient utilisées pour traiter ma demande. Vos données
+                    ne seront jamais partagées avec des tiers.
+                  </label>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition-colors duration-300"
+                >
+                  Envoyer ma demande
+                </button>
+              </form>
+
+              <!-- Messages -->
+              <div
+                id="success-message"
+                class="hidden mt-6 p-6 bg-green-100 text-green-800 rounded-lg"
+              >
+                <i class="fas fa-check-circle mr-2"></i> Votre message a bien été envoyé ! Nous vous
+                répondrons dans les 24h.
+              </div>
+
+              <div id="error-message" class="hidden mt-6 p-6 bg-red-100 text-red-800 rounded-lg">
+                <i class="fas fa-times-circle mr-2"></i> Oups, une erreur est survenue. Réessayez ou
+                écrivez à contact@rovenhq.com
+              </div>
+            </div>
+
+            <div class="lg:w-1/2">
+              <div class="bg-white rounded-2xl p-8 h-full shadow-lg">
+                <h3 class="text-2xl font-bold mb-6 text-gray-900">Contact rapide</h3>
+                <div class="space-y-8">
+                  <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-900">Par email</h4>
+                    <a
+                      href="mailto:contact@roven.fr"
+                      class="text-blue-600 text-xl font-semibold hover:text-blue-700 transition-colors duration-300"
+                      >contact@rovenhq.com</a
+                    >
+                    <p class="text-gray-600 mt-2">Réponse garantie sous 24h ouvrées</p>
+                  </div>
+                  <!-- <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-900">Par téléphone</h4>
+                    <a
+                      href="tel:+33123456789"
+                      class="text-blue-600 text-xl font-semibold hover:text-blue-700 transition-colors duration-300"
+                      >+596 6 56 77 97
+                    </a>
+                     <p class="text-gray-600 mt-2">Lun-Ven 9h-18h</p> 
+                  </div> -->
+                  <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-900">Réponses rapides</h4>
+                    <p class="text-gray-600">
+                      Notre engagement : vous répondre sous 24h ouvrées avec une première estimation
+                      ou des questions complémentaires pour affiner votre projet.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-4 text-gray-900">Notre process</h4>
+                    <ol class="text-gray-600">
+                      <li>Analyse de votre demande</li>
+                      <li>Proposition claire et chiffrée</li>
+                      <li>Lancement du projet</li>
+                    </ol>
+                  </div>
+                  <div class="pt-6 border-t border-gray-200">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-900">À savoir</h4>
+                    <ul class="space-y-3 text-gray-600">
+                      <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                        <span>Devis gratuit et sans engagement</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                        <span>Confidentialité garantie</span>
+                      </li>
+                      <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mr-3 mt-1"></i>
+                        <span>Paiement échelonné possible</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-2xl font-bold mb-4">ROVEN</h3>
+            <p class="text-gray-400">
+              Studio freelance spécialisé en création de sites vitrines professionnels.
+            </p>
+          </div>
+          <div class="flex space-x-6 mb-8 md:mb-0">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-linkedin text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-twitter text-xl"></i
+            ></a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"
+              ><i class="fab fa-instagram text-xl"></i
+            ></a>
+          </div>
+          <div>
+            <p class="text-gray-400 text-sm text-center md:text-right">
+              © 2024 ROVEN. Tous droits réservés.
+            </p>
+            <p class="text-gray-400 text-sm text-center md:text-right mt-2">
+              <a href="#" class="hover:text-white transition-colors duration-300"
+                >Mentions légales</a
+              >
+              |
+              <a href="#" class="hover:text-white transition-colors duration-300"
+                >Confidentialité</a
+              >
+              |
+              <a href="#" class="hover:text-white transition-colors duration-300">CGV</a>
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-500 text-sm">SIRET : 123 456 789 00001 • TVA : FR12 345678901</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+
+    <!-- <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // FAQ accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // Form validation and submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validation
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const projectType = document.getElementById('project-type').value;
+            const message = document.getElementById('message').value.trim();
+            const consent = document.getElementById('consent').checked;
+            
+            if (!name || !email || !projectType || !message || !consent) {
+                alert('Veuillez remplir tous les champs obligatoires et accepter les conditions.');
+                return;
+            }
+            
+            if (!validateEmail(email)) {
+                alert('Veuillez entrer une adresse email valide.');
+                return;
+            }
+            
+            // Simulate form submission
+            const successMessage = document.getElementById('success-message');
+            successMessage.classList.remove('hidden');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(40px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
+    </script> -->
+  </body>
+</html>
