@@ -12,10 +12,59 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: var(--roven-white);
   color: var(--roven-black);
   scroll-behavior: smooth;
+}
+
+/* .gradient-bg {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+} */
+
+.pack-card {
+  transition: all 0.3s ease;
+  border: px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pack-content {
+  flex-grow: 1;
+}
+
+.pack-button {
+  margin-top: auto;
+}
+
+.pack-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+}
+
+.recommended-badge {
+  background: linear-gradient(135deg, var(--roven-blue), #3b82f6);
+  color: white;
+}
+
+.option-card {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid #bae6fd;
+}
+
+.feature-list li::before {
+  content: "✓";
+  color: var(--roven-blue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+}
+
+.important-note {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-left: 4px solid #f97316;
 }
 
 .section-padding {
