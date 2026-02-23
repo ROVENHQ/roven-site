@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <base target="_self" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merci pour votre demande | ROVEN</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/logo/favicon.ico" />
+    <meta
+      name="description"
+      content="Merci d'avoir contacté ROVEN. Votre projet est maintenant entre de bonnes mains."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        color: var(--roven-black);
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        min-height: 100vh;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+      }
+
+      .checkmark-list li::before {
+        content: "•";
+        color: var(--roven-blue);
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      .success-card {
+        background: white;
+        border-radius: 1.5rem;
+        box-shadow: 0 20px 40px rgba(37, 99, 235, 0.08);
+        border: 1px solid #e2e8f0;
+        transition: all 0.3s ease;
+      }
+
+      .success-card:hover {
+        box-shadow: 0 25px 50px rgba(37, 99, 235, 0.12);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <span class="text-2xl font-bold text-gray-900">ROVEN</span>
+          </div>
+          <div>
+            <a
+              href="../index.html"
+              class="text-gray-600 hover:text-blue-600 font-medium transition-colors duration-300"
+            >
+              Retour au site
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <div class="success-card p-8 md:p-12">
+          <!-- Success Icon -->
+          <div class="text-center mb-10">
+            <div
+              class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-blue-50 mb-6"
+            >
+              <i class="fas fa-check text-blue-600 text-3xl"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Merci pour votre demande
+            </h1>
+            <p class="text-xl text-gray-600">Votre projet est maintenant entre de bonnes mains.</p>
+          </div>
+
+          <!-- Content -->
+          <div class="space-y-8">
+            <!-- Analysis Section -->
+            <div>
+              <p class="text-gray-700 text-lg mb-6">
+                Nous analysons actuellement votre demande et revenons vers vous sous 24 à 48 heures
+                avec :
+              </p>
+
+              <ul class="checkmark-list space-y-4 pl-5 mb-8">
+                <li class="text-gray-700 flex items-start">
+                  <span class="font-semibold text-blue-600 mr-2">Une première analyse</span>
+                  – Évaluation de vos besoins et objectifs
+                </li>
+                <li class="text-gray-700 flex items-start">
+                  <span class="font-semibold text-blue-600 mr-2">Une estimation budgétaire</span>
+                  – Devis détaillé et transparent
+                </li>
+                <li class="text-gray-700 flex items-start">
+                  <span class="font-semibold text-blue-600 mr-2">Les prochaines étapes</span>
+                  – Planning et méthodologie proposée
+                </li>
+              </ul>
+            </div>
+
+            <!-- Preparation Tip -->
+            <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+              <div class="flex items-start">
+                <div class="mr-4 mt-1">
+                  <i class="fas fa-lightbulb text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <p class="text-gray-700">
+                    <span class="font-semibold text-gray-900">Pour accélérer le démarrage :</span>
+                    <br />
+                    Si vous avez déjà un logo, des textes ou des exemples de sites qui vous
+                    inspirent, vous pouvez les préparer pour notre premier échange.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="pt-6 border-t border-gray-100">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">À quoi s'attendre ensuite ?</h3>
+
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="text-center p-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4"
+                  >
+                    <span class="text-blue-600 font-bold">1</span>
+                  </div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Analyse initiale</h4>
+                  <p class="text-gray-600 text-sm">Étude de votre projet sous 48h</p>
+                </div>
+
+                <div class="text-center p-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4"
+                  >
+                    <span class="text-blue-600 font-bold">2</span>
+                  </div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Proposition détaillée</h4>
+                  <p class="text-gray-600 text-sm">Devis personnalisé et planning</p>
+                </div>
+
+                <div class="text-center p-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4"
+                  >
+                    <span class="text-blue-600 font-bold">3</span>
+                  </div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Démarrage du projet</h4>
+                  <p class="text-gray-600 text-sm">Validation et lancement des travaux</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="pt-8 border-t border-gray-100">
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="../index.html#realisations"
+                  class="bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-300 text-center"
+                >
+                  Voir nos réalisations
+                </a>
+                <a
+                  href="../index.html"
+                  class="bg-white text-gray-900 font-semibold px-8 py-4 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors duration-300 text-center"
+                >
+                  Retour à l'accueil
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center mt-8">
+          <p class="text-gray-600 mb-2">Une question urgente ?</p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a
+              href="mailto:contact@rovenhq.com"
+              class="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-300"
+            >
+              <i class="fas fa-envelope mr-2"></i>
+              contact@rovenhq.com
+            </a>
+            <span class="text-gray-300 hidden sm:inline">|</span>
+            <a
+              href="https://www.instagram.com/rovenhq/"
+              class="text-blue-600 hover:text-blue-700 font-medium transition-colors duration-300"
+            >
+              <i class="fab fa-instagram mr-2"></i>
+              @rovenhq
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 mt-12">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-8 md:mb-0">
+            <h3 class="text-2xl font-bold mb-4">ROVEN</h3>
+            <p class="text-gray-400">
+              Studio freelance spécialisé en création de sites vitrines professionnels.
+            </p>
+          </div>
+          <div class="flex space-x-6 mb-8 md:mb-0">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rovenhq/"
+              class="text-gray-400 hover:text-white transition-colors duration-300"
+            >
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
+          <div>
+            <p class="text-gray-400 text-sm text-center md:text-right">
+              © 2026 ROVEN. Tous droits réservés.
+            </p>
+            <p class="text-gray-400 text-sm text-center md:text-right mt-2">
+              <a
+                href="roven-mentions-legales.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                Mentions légales
+              </a>
+              |
+              <a
+                href="roven-politique-confidentialite.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                Confidentialité
+              </a>
+              |
+              <a
+                href="roven-conditions-generales-vente.html"
+                class="hover:text-white transition-colors duration-300"
+              >
+                CGV
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+          <p class="text-gray-500 text-sm">
+            SIRET :
+            <span class="placeholder">En cours d’immatriculation</span>
+            • TVA :
+            <span class="placeholder">Non applicable</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript for thank you page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            if (targetId === "#home") {
+              // For demo purposes, just scroll to top
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            } else if (targetId === "#realisations") {
+              // For demo purposes, scroll to middle of page
+              window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+
+        // Add subtle animation to success card
+        const successCard = document.querySelector(".success-card");
+        if (successCard) {
+          setTimeout(() => {
+            successCard.style.transform = "translateY(0)";
+            successCard.style.opacity = "1";
+          }, 100);
+
+          successCard.style.transform = "translateY(20px)";
+          successCard.style.opacity = "0";
+          successCard.style.transition = "transform 0.6s ease, opacity 0.6s ease";
+        }
+      });
+    </script>
+  </body>
+</html>
